@@ -1,6 +1,8 @@
+/*
 body {
   background-color: red;
 }
+*/
 
 @media all and (max-width: 990px) {
   #main {
