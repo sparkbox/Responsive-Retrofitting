@@ -25,9 +25,17 @@
     clear: none !important;
     width: 18% !important;
     margin: 0 1% !important;
-    /*   overflow: hidden; */ }
+    /*   overflow: hidden; */
+    background-size: 105%;
+    height: auto; }
+    /* line 30, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_800.scss */
+    .tabs li a {
+      height: 0;
+      padding-top: 60%;
+      margin-top: 0;
+      display: block; }
 
-  /* line 29, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_800.scss */
+  /* line 38, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_800.scss */
   .slide {
     /*   position: static; */
     background-size: 50%;
@@ -36,10 +44,30 @@
     float: left;
     clear: left; }
 
-  /* line 38, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_800.scss */
+  /* line 47, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_800.scss */
   .mail-slide-copy {
     width: 50%;
-    padding-right: 5%; } }
+    padding-right: 5%; }
+
+  /* line 52, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_800.scss */
+  #tab-one {
+    background-position: 50% 25%; }
+
+  /* line 55, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_800.scss */
+  #tab-two {
+    background-position: 50% 50%; }
+
+  /* line 58, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_800.scss */
+  #tab-three {
+    background-position: 50% 76%; }
+
+  /* line 61, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_800.scss */
+  #tab-four {
+    background-position: 50% 100%; }
+
+  /* line 64, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_800.scss */
+  #tab-five {
+    background-position: 50% 25%; } }
 @media (max-width: 600px) {
   /* line 1, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_600.scss */
   body {
@@ -54,4 +82,14 @@
   /* line 12, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_600.scss */
   .mail-slide-copy {
     width: 100%;
-    padding: 0 5%; } }
+    padding: 0 5%; }
+
+  /* line 17, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_600.scss */
+  .tabs li {
+    width: 30% !important;
+    margin-right: 2% !important;
+    margin-bottom: 4em !important;
+    line-height: 1.2em; }
+    /* line 23, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_600.scss */
+    .tabs li:nth-child(4) {
+      margin-left: 18% !important; } }

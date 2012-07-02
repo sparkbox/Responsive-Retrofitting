@@ -13,3 +13,14 @@ body {
   width: 100%;
   padding: 0 5%;
 }
+
+.tabs li {
+  width: 30% !important;
+  margin-right: 2% !important;
+  margin-bottom: 4em !important;
+  line-height: 1.2em;
+  
+  &:nth-child(4) {
+    margin-left: 18% !important;
+  }
+}
