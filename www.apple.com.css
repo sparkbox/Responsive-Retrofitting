@@ -1,3 +1,21 @@
 body {
-  background-color: red;
+/*   background-color: red; */
+}
+
+@media all and (max-width: 990px) {
+  #main {
+    min-width: auto;
+  }
+  
+  #billboard {
+    width: 100%;
+  }
+  #billboard #hero hgroup {
+    width: 38.77551;
+  }
+  
+  #billboard #hero .hero-image {
+    max-width: 100%;
+  }
+  
 }
