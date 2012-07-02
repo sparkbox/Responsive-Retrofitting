@@ -1,13 +1,57 @@
 @media (max-width: 800px) {
   /* line 1, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_800.scss */
-  body {
-    background-color: #ddd; }
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
 
-  /* line 5, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_800.scss */
-  .carousel-container {
+  /*
+  body {
+    background-color: #ddd;
+  }
+  */
+  /* line 13, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_800.scss */
+  .carousel-container, #carousel {
     height: auto;
-    width: 100%; } }
+    width: 100%; }
+
+  /* line 18, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_800.scss */
+  .tabs {
+    background-image: none; }
+
+  /* line 21, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_800.scss */
+  .tabs li {
+    float: left !important;
+    clear: none !important;
+    width: 18% !important;
+    margin: 0 1% !important;
+    /*   overflow: hidden; */ }
+
+  /* line 29, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_800.scss */
+  .slide {
+    /*   position: static; */
+    background-size: 50%;
+    background-position: 0 50% !important;
+    position: static;
+    float: left;
+    clear: left; }
+
+  /* line 38, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_800.scss */
+  .mail-slide-copy {
+    width: 50%;
+    padding-right: 5%; } }
 @media (max-width: 600px) {
   /* line 1, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_600.scss */
   body {
-    background-color: green; } }
+    /*   background-color: green; */ }
+
+  /* line 5, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_600.scss */
+  .slide {
+    background-size: 100%;
+    background-position: 50% 0 !important;
+    padding-top: 60%; }
+
+  /* line 12, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_600.scss */
+  .mail-slide-copy {
+    width: 100%;
+    padding: 0 5%; } }

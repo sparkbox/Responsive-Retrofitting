@@ -1,8 +1,41 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*
 body {
   background-color: #ddd;
 }
+*/
 
-.carousel-container {
+.carousel-container, #carousel {
   height: auto;
   width: 100%;
+}
+
+.tabs {
+  background-image: none;
+}
+.tabs li {
+  float: left !important;
+  clear: none !important;
+  width: 18% !important;
+  margin: 0 1% !important;
+/*   overflow: hidden; */
+}
+
+.slide {
+/*   position: static; */
+  background-size: 50%;
+  background-position: 0 50% !important;
+  position: static;
+  float:left;
+  clear:left;
+}
+
+.mail-slide-copy {
+  width: 50%;
+  padding-right: 5%;
 }
