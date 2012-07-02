@@ -1,1 +1,2 @@
-document.body.setAttribute("style", "background-color: red;");
+alert(document.location.hostname);
+
