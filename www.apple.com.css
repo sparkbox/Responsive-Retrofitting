@@ -4,7 +4,7 @@ body {
 
 @media all and (max-width: 990px) {
   #main {
-    min-width: auto;
+    min-width: inherit;
   }
   
   #billboard {
@@ -16,6 +16,7 @@ body {
   
   #billboard #hero .hero-image {
     max-width: 100%;
+    height: auto;
   }
   
 }
