@@ -1,0 +1,8 @@
+@media (max-width: 800px) {
+  /* line 1, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_800.scss */
+  body {
+    background-color: red; } }
+@media (max-width: 600px) {
+  /* line 1, /Users/ben/Dropbox/WORK/Control/Responsive-Retrofitting/mail.google.com/scss/_600.scss */
+  body {
+    background-color: green; } }
