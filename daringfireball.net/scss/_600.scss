@@ -1,0 +1,44 @@
+// Header
+#Banner {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+// Sidebar
+#Sidebar {
+  border-bottom: 1px solid #64686C;
+  border-top: 1px solid #64686C;
+  padding: 15px 0;
+  position: inherit;
+  text-align: center;
+  width: 100%;
+  p {
+    margin: 0 0 20px 0;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      margin: 10px;
+    }
+    a { font-size: 1.4em; }
+  }
+  #SidebarTheDeck { display: none; }
+}
+
+// Content
+#Main {
+  margin-left: 0;
+  width: 100%;
+  dt:first-child { margin-top: 3.5em; }
+  dt {
+    font-size: 1.5em;
+    line-height: 1.6em;
+  }
+  p {
+    font-size: 1.4em;
+    line-height: 1.5em;
+  }
+}

@@ -1,46 +1,73 @@
-body {
-  min-width: 0;
-  padding: 10px;
-  width: auto; }
+@media (max-width: 800px) {
+  body {
+    min-width: 0;
+    padding: 10px;
+    width: auto; }
 
-#Box {
-  width: 100%; }
-
-#Banner {
-  margin: 0;
-  text-align: center;
-  width: 100%; }
-  #Banner img {
-    height: auto;
+  #Box {
     width: 100%; }
 
-#Sidebar {
-  position: inherit;
-  text-align: center;
-  width: 100%; }
-  #Sidebar p {
-    margin: 0 0 20px 0; }
-  #Sidebar ul {
-    margin: 0;
-    padding: 0; }
-    #Sidebar ul li {
-      display: inline-block;
-      line-height: 2em;
-      margin-right: 15px; }
-    #Sidebar ul a {
-      font-size: 2em; }
-  #Sidebar #SidebarTheDeck {
-    display: none; }
+  #Banner {
+    width: 300px; }
+    #Banner img {
+      height: 56px;
+      width: auto; }
 
-#Main {
-  float: left;
-  margin-left: 0;
-  width: 100%; }
+  #Sidebar {
+    float: left;
+    padding: 15px;
+    text-align: right;
+    width: 160px; }
+    #Sidebar #SidebarTheDeck {
+      margin-top: 2em; }
 
-/*@media (max-width: 800px) {
-  @import "800";
-}
-
+  #Main {
+    width: 60%;
+    float: left; }
+    #Main .linkedlist {
+      margin-top: 0; }
+    #Main dt:first-child {
+      margin-top: 0; }
+    #Main dt {
+      font-size: 1.3em;
+      line-height: 1.4em; }
+    #Main p {
+      font-size: 1.2em;
+      line-height: 1.5em; } }
 @media (max-width: 600px) {
-  @import "600";
-}*/
+  #Banner {
+    margin: 0;
+    text-align: center;
+    width: 100%; }
+
+  #Sidebar {
+    border-bottom: 1px solid #64686C;
+    border-top: 1px solid #64686C;
+    padding: 15px 0;
+    position: inherit;
+    text-align: center;
+    width: 100%; }
+    #Sidebar p {
+      margin: 0 0 20px 0; }
+    #Sidebar ul {
+      margin: 0;
+      padding: 0; }
+      #Sidebar ul li {
+        display: inline-block;
+        margin: 10px; }
+      #Sidebar ul a {
+        font-size: 1.4em; }
+    #Sidebar #SidebarTheDeck {
+      display: none; }
+
+  #Main {
+    margin-left: 0;
+    width: 100%; }
+    #Main dt:first-child {
+      margin-top: 3.5em; }
+    #Main dt {
+      font-size: 1.5em;
+      line-height: 1.6em; }
+    #Main p {
+      font-size: 1.4em;
+      line-height: 1.5em; } }

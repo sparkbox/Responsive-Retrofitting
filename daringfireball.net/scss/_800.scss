@@ -1,0 +1,43 @@
+// Main
+body {
+  min-width: 0;
+  padding: 10px;
+  width: auto;
+}
+
+#Box { width: 100%; }
+
+// Header
+#Banner {
+  width: 300px;
+  img {
+    height: 56px;
+    width: auto;
+  }
+}
+
+// Sidebar
+#Sidebar {
+  float: left;
+  padding: 15px;
+  text-align: right;
+  width: 160px;
+  
+  #SidebarTheDeck { margin-top: 2em; }
+}
+
+// Content
+#Main {
+  width: 60%;
+  float: left;
+  .linkedlist { margin-top: 0; }
+  dt:first-child { margin-top: 0; }
+  dt {
+    font-size: 1.3em;
+    line-height: 1.4em;
+  }
+  p {
+    font-size: 1.2em;
+    line-height: 1.5em;
+  }
+}
