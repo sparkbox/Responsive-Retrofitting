@@ -1,2 +1,19 @@
 body {
-  background-color: green; }
+  width: auto; }
+
+#Box {
+  width: 100%; }
+
+#Banner {
+  width: 100%; }
+  #Banner img {
+    height: auto;
+    width: 100%; }
+
+/*@media (max-width: 800px) {
+  @import "800";
+}
+
+@media (max-width: 600px) {
+  @import "600";
+}*/
