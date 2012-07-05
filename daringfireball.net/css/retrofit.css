@@ -1,14 +1,41 @@
 body {
+  min-width: 0;
+  padding: 10px;
   width: auto; }
 
 #Box {
   width: 100%; }
 
 #Banner {
+  margin: 0;
+  text-align: center;
   width: 100%; }
   #Banner img {
     height: auto;
     width: 100%; }
+
+#Sidebar {
+  position: inherit;
+  text-align: center;
+  width: 100%; }
+  #Sidebar p {
+    margin: 0 0 20px 0; }
+  #Sidebar ul {
+    margin: 0;
+    padding: 0; }
+    #Sidebar ul li {
+      display: inline-block;
+      line-height: 2em;
+      margin-right: 15px; }
+    #Sidebar ul a {
+      font-size: 2em; }
+  #Sidebar #SidebarTheDeck {
+    display: none; }
+
+#Main {
+  float: left;
+  margin-left: 0;
+  width: 100%; }
 
 /*@media (max-width: 800px) {
   @import "800";

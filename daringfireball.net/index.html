@@ -1,0 +1,1041 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Daring Fireball</title>
+  <meta name="viewport" content="width=600, initial-scale=0.5, minimum-scale=0.45" />	<link rel="apple-touch-icon-precomposed" href="/graphics/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" href="/graphics/favicon.png" />
+  <link rel="stylesheet" type="text/css" media="screen"  href="http://daringfireball.net/css/fireball_screen.css?v1.5" />
+  <link rel="stylesheet" type="text/css" media="screen"  href="http://daringfireball.net/css/ie_sucks.php" />
+  <link rel="stylesheet" type="text/css" media="print"   href="http://daringfireball.net/css/fireball_print.css?v01" />
+  <link rel="stylesheet" type="text/css" media="screen"  href="/css/retrofit.css" />
+  <link rel="alternate" type="application/atom+xml" href="/index.xml" />
+  <script src="http://daringfireball.net/js/js-global/FancyZoom.js" type="text/javascript"></script>
+  <script src="http://daringfireball.net/js/js-global/FancyZoomHTML.js" type="text/javascript"></script>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <script src="http://daringfireball.net/mint/?js" type="text/javascript"></script>
+</head>
+<body onload="setupZoom()">
+<div id="Box">
+
+<div id="Banner">
+<a href="http://daringfireball.net" title="Daring Fireball: Home"><img src="http://daringfireball.net/graphics/logos/" alt="Daring Fireball" height="56" /></a>
+</div>
+
+<div id="Sidebar">
+<p>By <strong>John&nbsp;Gruber</strong></p>
+
+<ul><!--&#9733;-->
+<li><a href="http://daringfireball.net/archive/" title="Previous articles.">Archive</a></li>
+<!-- 
+<li><a href="/shirts" title="Buy some swell t-shirts.">T-Shirts</a></li>
+ -->
+<li><script type="text/javascript">
+// <![CDATA[
+function ReadCookie(name) {
+  var nameEQ = name + "=";
+  var ca = document.cookie.split(';');
+  for(var i=0;i < ca.length;i++) {
+    var c = ca[i];
+    while (c.charAt(0)==' ') c = c.substring(1,c.length);
+    if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+  }
+  return null;
+}
+var display_linked_list = ReadCookie('displayLinkedList');
+var li_linked = '<a href="/linked/" title="The Linked List.">Linked List<\/a>';
+var li_members = '<a href="/members/" title="Support Daring Fireball with a contribution.">Membership<\/a>';
+if (display_linked_list == "hide") {
+  // Linked List is off on home page, so show it in menu:
+  document.write(li_linked + "<\/li>\n<li>" + li_members);
+}
+else {
+  // Default to not putting separate LL item in sidebar:
+  document.write(li_members);
+}
+// ]]>
+</script></li>
+<li><a href="/projects/" title="Software projects, including SmartyPants and Markdown.">Projects</a></li>
+<li><a href="/contact/" title="How to send email regarding Daring Fireball.">Contact</a></li>
+<li><a href="/colophon/" title="About this site and the tools used to produce it.">Colophon</a></li>
+<li><a href="/feeds/">RSS Feed</a></li>
+<li><a href="/feeds/sponsors/">Sponsorship</a></li>
+</ul>
+
+</div> <!-- Sidebar -->
+
+<div id="Main">
+
+<dl class="linkedlist">
+<dt>
+<a href="https://twitter.com/thetalkshow/status/220599149232533504">Sponsor The Talk&#160;Show</a>&nbsp;<a class="permalink" title="Permanent link to ‘Sponsor The Talk Show’" href="http://daringfireball.net/linked/2012/07/04/sponsor-the-talk-show">&#9733;</a>
+</dt>
+<dd>
+<p>Long story short, there&#8217;s still one open sponsorship spot for this week&#8217;s The Talk Show, recording tomorrow (which may well be today by the time you read this) and airing Friday. If you&#8217;ve got a product or service you&#8217;d like to promote to the best podcast audience in the world, <a href="&#109;&#97;&#x69;&#108;&#116;o:&#x73;&#112;&#111;&#x6E;&#x73;&#x6F;&#x72;&#115;&#64;&#x64;a&#x72;&#105;&#110;&#103;&#x66;&#x69;&#x72;e&#98;&#97;&#108;&#108;&#x2E;&#x6E;&#101;&#116;?subject=The%20Talk%20Show%20Sponsorship">get in touch</a>.</p>
+
+<p><strong>Update:</strong> OK, this week&#8217;s open spot is sold, but there are still a few openings for the remaining shows in July.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.marco.org/2012/07/04/the-ipad-mini">iPad Mini and Supply Chain&#160;Leaks</a>&nbsp;<a class="permalink" title="Permanent link to ‘iPad Mini and Supply Chain Leaks’" href="http://daringfireball.net/linked/2012/07/04/ipad-mini">&#9733;</a>
+</dt>
+<dd>
+<p>Marco Arment:</p>
+
+<blockquote>
+  <p>If Apple were to launch a $200–300 7.8-inch iPad, they’d probably
+sell a <em>ton</em> of them for the holiday season &#8212; which means they’d
+need to start ramping up production pretty soon, if not already.
+If they were doing that, we’d probably see legitimate-looking
+parts leaked from the supply chain by now, but as far as I know,
+we haven’t.</p>
+</blockquote>
+
+<p>Actually, I&#8217;ve seen at least one purported leak: <a href="http://blog.zoogue.com/ipad/exclusive-ipad-nano-images-surface/">a month ago at a site called ZooGue</a>. No idea if it&#8217;s legitimate, but I like it. It hearkens back to the original iPhone with its flat back and round sides.</p>
+
+<p><strong>Update:</strong> ZooGue link is fireballed, but <a href="http://webcache.googleusercontent.com/search?q=cache:XOdPTXlcPt8J:blog.zoogue.com/ipad/exclusive-ipad-nano-images-surface/+&amp;cd=1&amp;hl=en&amp;ct=clnk&amp;gl=us">Google has it cached</a>.</p>
+
+<p><strong>Update 2:</strong> I&#8217;m hearing it&#8217;s a fake, so take it with at least a few extra grains of salt.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.asymco.com/2012/07/04/the-building-and-dismantling-of-the-windows-advantage/">The Dismantling of the Windows&#160;Hegemony</a>&nbsp;<a class="permalink" title="Permanent link to ‘The Dismantling of the Windows Hegemony’" href="http://daringfireball.net/linked/2012/07/04/windows-hegemony">&#9733;</a>
+</dt>
+<dd>
+<p>This piece by Horace Dediu explains &#8212; <em>perfectly</em> &#8212; what I was talking about this week with my <a href="http://daringfireball.net/2012/07/iphone_disruption_five_years_in">iPhone disruption piece</a>. Except what Dediu shows is that the disruption started in 2004, three years before the iPhone shipped. But the introduction of iOS accelerated this disruption dramatically.</p>
+
+<p>Bottom line: In 1984, DOS PCs outsold the Mac 6-to-1. By 2004, the ratio of Windows PCs to Macs sold peaked at 56-to-1. Today it&#8217;s under 20-to-1 and still dropping &#8212; but if you include iOS devices, it&#8217;s down to 2-to-1. Staggering.</p>
+
+<p>Dediu&#8217;s graphs are the best illustration I&#8217;ve ever seen of the waxing and waning of Microsoft&#8217;s Windows hegemony.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.usatoday.com/tech/columnist/edwardbaig/story/2012-07-03/nexus-7-tablet-review/56005986/1">No Flash, No&#160;Problem</a>&nbsp;<a class="permalink" title="Permanent link to ‘No Flash, No Problem’" href="http://daringfireball.net/linked/2012/07/04/baig-flash">&#9733;</a>
+</dt>
+<dd>
+<p>Ed Baig, listing the pros and cons in his Nexus 7 review:</p>
+
+<blockquote>
+  <p>Pro. Thin and light at sweet price. Jelly Bean. Excellent screen.
+Fast, fluid. Includes $25 spending credit.</p>
+
+<p>Con. No cellular connectivity. No rear camera. Fewer
+tablet-specific apps. Limited storage.</p>
+</blockquote>
+
+<p>Three months ago, here&#8217;s <a href="http://daringfireball.net/linked/2012/03/15/baig-ipad-flash">Baig listing the pros and cons for the iPad 3</a> (emphasis added):</p>
+
+<blockquote>
+  <p>Pro. Stunning screen, 4G speeds (on certain models), decent
+dictation and improved camera optics. Strong battery. Apps galore.</p>
+
+<p>Con. Shooting with camera can be awkward. <strong>No Adobe Flash.</strong> No
+camera flash. No expanded storage.</p>
+</blockquote>
+
+<p>Baig called out the iPad 3&#8217;s lack of Flash Player support in the article itself, too. No mention of Flash whatsoever in the Nexus 7 review. Funny how <a href="http://www.theverge.com/2012/6/29/3125219/flash-mobile-android-4-1-not-supported">the lack of Flash Player support</a> was only a problem with Apple devices.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.theinquirer.net/inquirer/news/2189321/uk-google-nexus-tablets-wont-feature-music-magazines-tv">U.K. Nexus 7 Won’t Feature Music, Magazines, or TV&#160;Shows</a>&nbsp;<a class="permalink" title="Permanent link to ‘U.K. Nexus 7 Won’t Feature Music, Magazines, or TV Shows’" href="http://daringfireball.net/linked/2012/07/04/uk-nexus-7">&#9733;</a>
+</dt>
+<dd>
+<p>Carly Page, The Inquirer:</p>
+
+<blockquote>
+  <p>Speaking with The Inquirer, a Google spokesperson confirmed that
+the Nexus 7 won&#8217;t feature these three categories, which will
+remain an exclusive in US for the time being. They said, &#8220;The UK
+version will feature all of the options currently available in the
+UK Play store&#8221;, which means users of the Nexus 7 will be limited
+in their choices movies, apps, games and books.</p>
+</blockquote>
+
+<p>I wonder if the iPad Mini will have music, magazines, and TV shows in the U.K.?</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.imore.com/2012/07/03/apple-release-7-inch-ipad/">Why Apple Would Release a 7-Inch&#160;iPad</a>&nbsp;<a class="permalink" title="Permanent link to ‘Why Apple Would Release a 7-Inch iPad’" href="http://daringfireball.net/linked/2012/07/04/ritchie-ipad-mini">&#9733;</a>
+</dt>
+<dd>
+<p>Rene Ritchie:</p>
+
+<blockquote>
+  <p>If Apple can make a 9.7 inch iPad for the same price Apple&#8217;s
+competitors can make a 7 inch tablet, how much would it cost Apple
+to make a 7 inch tablet?</p>
+
+<p>It&#8217;s hard to imagine a $200 7 inch iPad having huge margins, but
+it was hard to imagine a $500 9.7 inch iPad having huge margins in
+2010. Now the entry-level 9.7 inch iPad 2 sells for $400.</p>
+</blockquote>
+
+<p>I bet Apple could make a $199 iPad Mini <em>and</em> turn a profit on it &#8212; especially with a $249 version sitting next to it with double the storage. It&#8217;s that simple. If Apple thinks people would buy a smaller cheaper iPad and that they can turn a profit making them, they&#8217;ll do it. No reason to overthink it.</p>
+
+<p>Keep in mind too that Amazon still only sells the Kindle Fire in the U.S., and Google is only selling the Nexus 7 in three countries &#8212; and outside the U.S. <a href="http://www.theinquirer.net/inquirer/news/2189321/uk-google-nexus-tablets-wont-feature-music-magazines-tv">it won&#8217;t have music, magazines, or TV shows</a>. Even if this iPad Mini doesn&#8217;t ship until October, Apple will likely beat Amazon and Google to market in much of the world.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.bloomberg.com/news/2012-07-03/here-comes-nexus-7-nightmare-the-ipad-mini.html">Bloomberg, Too, Says iPad Mini Is&#160;Coming</a>&nbsp;<a class="permalink" title="Permanent link to ‘Bloomberg, Too, Says iPad Mini Is Coming’" href="http://daringfireball.net/linked/2012/07/04/bloomberg-ipad-mini">&#9733;</a>
+</dt>
+<dd>
+<p>Peter Burrows and Adam Satariano, reporting for Bloomberg:</p>
+
+<blockquote>
+  <p>Apple Inc. plans to debut a smaller, cheaper iPad by year-end, two
+people with knowledge of the plans said, to help maintain
+dominance of the tablet market as Google Inc. and Microsoft Corp.
+prepare competing handheld devices.</p>
+
+<p>The new model will have a screen that’s 7 inches to 8 inches
+diagonally, less than the current 9.7-inch version, said the
+people, who asked not to be identified because Apple hasn’t made
+its plans public. The product, which Apple may announce by
+October, won’t have the high-definition screen featured on the
+iPad that was released in March, one of the people said.</p>
+</blockquote>
+
+<p>Here&#8217;s the logic behind such a display. Displays aren&#8217;t manufactured at their finished size; rather, they&#8217;re made on big sheets, and then cut to size. I believe the iPad Mini (or whatever it&#8217;s going to be called) uses the same display as the iPhone 3GS. So instead of cutting these sheets into 3.5-inch 480&#8201;&#215;&#8201;320 displays for the iPhone 3GS, they&#8217;ll cut them into 7.85-inch 1024&#8201;&#215;&#8201;768 displays for the smaller iPad. Same exact display technology, though &#8212; display technology that Apple has been producing at scale ever since the original iPhone five years ago. These are displays Apple <em>knows</em> they can produce efficiently and in enormous quantities. All they have to do is cut them into bigger pieces.</p>
+
+<p>And then for developers, the iPad Mini acts just like an iPad 1 or 2: same number of pixels, just a little smaller physically. It&#8217;s not a new target.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://online.wsj.com/article/SB10001424052702304141204577506471913819412.html?mod=googlenews_wsj">WSJ: Apple Starting Production of Smaller&#160;iPad</a>&nbsp;<a class="permalink" title="Permanent link to ‘WSJ: Apple Starting Production of Smaller iPad’" href="http://daringfireball.net/linked/2012/07/04/wsj-ipad-mini">&#9733;</a>
+</dt>
+<dd>
+<p>Lorraine Luk, reporting for the WSJ (<a href="https://www.google.com/search?sugexp=chrome,mod=11&amp;sourceid=chrome&amp;ie=UTF-8&amp;q=Launch+Appears+Near+for+Smaller+Apple+Tablet">Google link to circumvent paywall</a>):</p>
+
+<blockquote>
+  <p>Apple Inc.&#8217;s component suppliers in Asia are preparing for mass
+production in September of a tablet computer with a smaller screen
+than the iPad, people familiar with the situation said, suggesting
+a launch for the device is near. Two of the people said that the
+tablet&#8217;s screen will likely be smaller than eight inches. The
+iPad&#8217;s screen measures 9.7 inches, unchanged since the first model
+was released in 2010.</p>
+
+<p>Officials at the component suppliers, who declined to be named,
+said this week that Apple has told them to prepare for mass
+production of the smaller tablet.</p>
+</blockquote>
+
+<p>If true, it should be <a href="http://www.appadvice.com/appnn/2012/03/apple-has-163-reasons-to-release-fabled-ipad-mini">a 7.85-inch, 1024&#8201;&#215;&#8201;768 display</a>.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.nytimes.com/2012/07/05/science/cern-physicists-may-have-discovered-higgs-boson-particle.html">CERN Physicists May Have Discovered Higgs Boson&#160;Particle</a>&nbsp;<a class="permalink" title="Permanent link to ‘CERN Physicists May Have Discovered Higgs Boson Particle’" href="http://daringfireball.net/linked/2012/07/04/higgs-boson">&#9733;</a>
+</dt>
+<dd>
+<p>A great day for science; not so much <a href="http://www.theverge.com/2012/7/4/3136652/cern-scientists-comic-sans-higgs-boson">for typography</a>.</p>
+
+</dd>
+
+
+</dl>
+
+<h2 class="dateline">Tuesday,  3 July 2012</h2>
+<dl class="linkedlist">
+<dt>
+<a href="http://9to5mac.com/2012/07/03/9to5macs-ios-readership-already-nearing-10-on-ios-6-on-single-days/">10 Percent of 9to5Mac’s iOS Readers Are on iOS&#160;6</a>&nbsp;<a class="permalink" title="Permanent link to ‘10 Percent of 9to5Mac’s iOS Readers Are on iOS 6’" href="http://daringfireball.net/linked/2012/07/03/ios-6-9to5mac">&#9733;</a>
+</dt>
+<dd>
+<p>Visitors to sites like 9to5Mac certainly are not representative of the iOS user base as a whole, but it&#8217;s an interesting statistic nonetheless. Here at DF, 7.75 percent of iOS visitors yesterday were on iOS 6. (83 percent were on 5.1.1, 5 percent on 5.1, 1.6 percent on 5.0.1, and all other versions of iOS were well under half a percent.)</p>
+
+<p>More interesting to me is that iOS now accounts for just under one-third of DF web traffic. These are numbers the past month:</p>
+
+<table>
+<tbody>
+
+<tr>
+  <td align="left">Macintosh</td>
+  <td align="right">51%</td>
+</tr>
+<tr>
+  <td align="left">iOS</td>
+  <td align="right">32%</td>
+</tr>
+<tr>
+  <td align="left">Windows</td>
+  <td align="right">14%</td>
+</tr>
+<tr>
+  <td align="left">Linux</td>
+  <td align="right">1.4%</td>
+</tr>
+<tr>
+  <td align="left">Android</td>
+  <td align="right">0.8%</td>
+</tr>
+
+</tbody>
+</table>
+
+<p>The iOS split is 19/13 for the iPhone and iPad, respectively.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://gigaom.com/2012/07/02/exclusive-amazon-buys-3d-mapping-startup-upnext/">Amazon Buys 3D Mapping Startup&#160;UpNext</a>&nbsp;<a class="permalink" title="Permanent link to ‘Amazon Buys 3D Mapping Startup UpNext’" href="http://daringfireball.net/linked/2012/07/03/amazon-maps">&#9733;</a>
+</dt>
+<dd>
+<p>Ki Mae Heussner:</p>
+
+<blockquote>
+  <p>It looks like Amazon is building up its presence in the mapping
+business. The tech giant today closed a deal to acquire 3D mapping
+startup UpNext, GigaOM has learned.</p>
+</blockquote>
+
+<p>The maps war is in full swing. Got to give credit to Google for committing itself to maps so long ago.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://devour.com/video/designing-bonds-world/">Designing Bond’s World</a>&nbsp;<a class="permalink" title="Permanent link to ‘Designing Bond’s World’" href="http://daringfireball.net/linked/2012/07/03/bond-design">&#9733;</a>
+</dt>
+<dd>
+<p>Nice video:</p>
+
+<blockquote>
+  <p>To mark the 50th anniversary of the 007 film franchise, The
+Barbican sits down with set designer Sir Ken Adam, Aston Martin&#8217;s
+Head of Design, and the designers and the makers of the legendary
+Golden Gun to talk about the creation of the iconic world
+inhabited by Bond.</p>
+</blockquote>
+
+<p>See also: <a href="http://vimeo.com/45066851">Designing Bond&#8217;s Look</a>. (<a href="https://twitter.com/joecaiati/status/220207688313872384">Via Joe Caiati</a>.)</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.vanityfair.com/online/daily/2012/07/microsoft-downfall-emails-steve-ballmer">Preview of Vanity Fair Feature on Microsoft’s&#160;Downfall</a>&nbsp;<a class="permalink" title="Permanent link to ‘Preview of Vanity Fair Feature on Microsoft’s Downfall’" href="http://daringfireball.net/linked/2012/07/03/microsoft-vf">&#9733;</a>
+</dt>
+<dd>
+<p>Vanity Fair:</p>
+
+<blockquote>
+  <p>Eichenwald’s conversations reveal that a management system known
+as “stack ranking” &#8212; a program that forces every unit to declare
+a certain percentage of employees as top performers, good
+performers, average, and poor &#8212; effectively crippled Microsoft’s
+ability to innovate. “Every current and former Microsoft employee
+I interviewed &#8212; every one &#8212; cited stack ranking as the most
+destructive process inside of Microsoft, something that drove out
+untold numbers of employees,” Eichenwald writes. “If you were on a
+team of 10 people, you walked in the first day knowing that, no
+matter how good everyone was, 2 people were going to get a great
+review, 7 were going to get mediocre reviews, and 1 was going to
+get a terrible review,” says a former software developer. “It
+leads to employees focusing on competing with each other rather
+than competing with other companies.”</p>
+</blockquote>
+
+</dd>
+
+
+<dt>
+<a href="http://www.detroitnews.com/article/20120702/TECHNOLOGY/207020324/It-s-lonely-nation-s-only-BlackBerry-retail-store">The Scene at BlackBerry’s Only U.S. Retail&#160;Store</a>&nbsp;<a class="permalink" title="Permanent link to ‘The Scene at BlackBerry’s Only U.S. Retail Store’" href="http://daringfireball.net/linked/2012/07/03/blackberry-rim">&#9733;</a>
+</dt>
+<dd>
+<p>You can hear the crickets chirping from here.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://gigaom.com/2012/06/29/report-tablets-now-drive-more-ecommerce-traffic-than-smartphones/">‘Tablets’</a>&nbsp;<a class="permalink" title="Permanent link to ‘‘Tablets’’" href="http://daringfireball.net/linked/2012/07/03/quote-unquote-tablets">&#9733;</a>
+</dt>
+<dd>
+<p>Ryan Kim, reporting for GigaOm:</p>
+
+<blockquote>
+  <p>Monetate, which analyzes more than 100 million online shopping experiences, said that in the first quarter of 2012, tablet traffic to commerce sites hit 6.52 percent, overtaking smartphones (5.35 percent) for the first time. In the last year, tablets’ traffic increased 348 percent while smartphones visits grew by 117 percent over the same period.</p>
+</blockquote>
+
+<p>Which tablets, though?</p>
+
+<blockquote>
+  <p>Almost all of the traffic (95 percent) was from the iPad, said Monetate.</p>
+</blockquote>
+
+<p>So why is the headline about &#8220;tablets&#8221;?</p>
+
+</dd>
+
+
+</dl>
+
+<h2 class="dateline">Monday,  2 July 2012</h2>
+<dl class="linkedlist">
+<dt>
+<a href="http://gizmodo.com/5921823/does-google-have-any-social-skills-at-all">Does Google Have Any Social Skills at&#160;All?</a>&nbsp;<a class="permalink" title="Permanent link to ‘Does Google Have Any Social Skills at All?’" href="http://daringfireball.net/linked/2012/07/02/google-social-skills">&#9733;</a>
+</dt>
+<dd>
+<p>Good piece by Sam Biddle at Gizmodo. Same goes for Andy Rubin&#8217;s public admission <a href="http://daringfireball.net/linked/2012/06/28/no-margin">that the Nexus 7 has &#8220;no margin&#8221;</a> &#8212; why admit that publicly? Not just because it surely annoys their OEM partners who <em>are</em> trying to build Android devices for a profit, but why be proud of this at all?</p>
+
+</dd>
+
+
+<dt>
+<a href="http://devour.com/video/uncle-drew/">Uncle Drew</a>&nbsp;<a class="permalink" title="Permanent link to ‘Uncle Drew’" href="http://daringfireball.net/linked/2012/07/02/uncle-drew">&#9733;</a>
+</dt>
+<dd>
+<p>NBA rookie of the year Kyrie Irving plays pick-up basketball disguised as an old man. So great. (Thanks to my dad, Bob Gruber, for the link.)</p>
+
+</dd>
+
+
+<dt>
+<a href="http://windowsteamblog.com/windows/b/bloggingwindows/archive/2012/07/02/upgrade-to-windows-8-pro-for-39-99.aspx">Windows 8 Pro Upgrade Price:&#160;$40</a>&nbsp;<a class="permalink" title="Permanent link to ‘Windows 8 Pro Upgrade Price: $40’" href="http://daringfireball.net/linked/2012/07/02/windows-8-upgrade">&#9733;</a>
+</dt>
+<dd>
+<p>Brandon LeBlanc, Microsoft:</p>
+
+<blockquote>
+  <p>We set out to make it as easy as possible for everyone to upgrade
+to Windows 8. Starting at general availability, if your PC is
+running Windows XP, Windows Vista, or Windows 7 you will qualify
+to download an upgrade to Windows 8 Pro for just $39.99 in 131
+markets. And if you want, you can add Windows Media Center for
+free through the “add features” option within Windows 8 Pro after
+your upgrade.</p>
+</blockquote>
+
+<p><a href="http://techland.time.com/2012/07/02/microsofts-price-busting-gambit-windows-8-pro-will-be-a-39-99-upgrade/">Harry McCracken</a>:</p>
+
+<blockquote>
+  <p>By comparison, the Windows 7 Pro upgrade is $199.99; even the less
+full-featured Windows 7 Home Premium one lists for $119.99.</p>
+</blockquote>
+
+<p>Disruption.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://pxldot.com/post/26373071943/apples-icon-ecosystem-or-carrying-the-quality-all-the">Mac and iOS App Icons&#160;Compared</a>&nbsp;<a class="permalink" title="Permanent link to ‘Mac and iOS App Icons Compared’" href="http://daringfireball.net/linked/2012/07/02/icons">&#9733;</a>
+</dt>
+<dd>
+<p>Extensive comparison from Chris Sauve. </p>
+
+</dd>
+
+
+</dl>
+
+<hr class="ookiaks" />
+
+
+<div class="article">
+<h1><a href="http://daringfireball.net/2012/07/iphone_disruption_five_years_in" title="Permanent link to ‘The iPhone and Disruption: Five Years In’">The iPhone and Disruption: Five Years&#160;In</a></h1>
+<h6 class="dateline">Monday,  2 July 2012</h6>
+
+<p>Clayton Christensen, author of the deservedly much-praised <em><a href="http://www.amazon.com/exec/obidos/asin/0060521996/ref=nosim/daringfirebal-20">The Innovator&#8217;s Dilemma</a></em>, was <a href="http://jeremy.linuxquestions.org/2007/06/28/clayton-christensens-innovators-dilemma-says-iphone-will-fail/">wrong about the iPhone five years ago</a>:</p>
+
+<blockquote>
+  <p>So music on the mobile phone is going to disrupt the iPod? But
+Apple’s just about to launch the iPhone. The iPhone is a
+sustaining technology relative to Nokia. In other words, Apple is
+leaping ahead on the sustaining curve [by building a better
+phone]. But the prediction of the theory would be that Apple won’t
+succeed with the iPhone. They’ve launched an innovation that the
+existing players in the industry are heavily motivated to beat:
+It’s not [truly] disruptive. History speaks pretty loudly on that,
+that the probability of success is going to be limited.</p>
+</blockquote>
+
+<p>Last month <a href="http://www.newyorker.com/reporting/2012/05/14/120514fa_fact_macfarquhar">Larissa MacFarquhar profiled Christensen</a> in The New Yorker (subscribers-only, alas), and in a parenthetical, succinctly explained why he got the iPhone wrong:</p>
+
+<blockquote>
+  <p>One CEO who never asked for his help, despite his admiration for
+<em>The Innovator&#8217;s Dilemma</em>, was Steve Jobs, which was fortunate,
+because Christiansen&#8217;s most embarrassing prediction was that the
+iPhone would not succeed. Being a low-end guy, Christiansen saw it
+as a fancy cell phone; it was only later that he realized that it
+was also disruptive to laptops.</p>
+</blockquote>
+
+<p>This explains everything that has happened to both the computer and phone industries over the past five years. The iPhone is not and never was a phone.<sup id="fnr1-2012-07-02"><a href="#fn1-2012-07-02">1</a></sup> It is a pocket-sized computer that <em>obviates</em> the phone. The iPhone is to cell phones what the Mac was to typewriters.</p>
+
+<p><a href="http://daringfireball.net/2008/05/blackberry_vs_iphone">I wrote about this back in May 2008</a>, positing that RIM was then already likely screwed because the future of the industry was about making computers, not phones or messaging devices, and RIM had no institutional experience as a computer maker, on either the hardware or software sides of the fence. With Apple, on the other hand, you can more or less look back at the decade preceding the original iPhone as a series of training exercises for what was to come: building portable computers (PowerBooks, iBooks, MacBooks) and pocketable devices (iPods).</p>
+
+<p>The iPod&#8217;s success fooled almost everyone (including me) into thinking that Apple&#8217;s entry into the phone market would be similar. The iPod was the world&#8217;s best portable media player; the &#8220;iPhone&#8221;, thus, would likely be the world&#8217;s best cell phone.</p>
+
+<p>But that&#8217;s not what it was. It was the world&#8217;s best portable computer. Best not in the sense of being the most powerful, or the fastest, or the most-efficient to use. The thing couldn&#8217;t even do copy-and-paste. It was the best because it was always there, always on, always just a button-push away. The disruption was not that we now finally had a nice phone; it was that, for better or for worse, we would now never again be without a computer or the Internet. It was the Mac side of Apple, not the iPod side, that set the engineering foundation for the iPhone.</p>
+
+<p>What&#8217;s happened over the last five years shows not that Apple disrupted the phone handset industry, but rather that Apple <em>destroyed</em> the handset industry &#8212; by disrupting the computer industry. Today, cell phones are apps, not devices. The companies that were the most successful at selling cell phones pre-iPhone are now <a href="http://www.palm.com/">dead</a> or <a href="http://www.asymco.com/2012/07/02/rims-tailspin/">dying</a>. Amazon, Google, and now even Microsoft are designing and selling their own integrated touchscreen portable tablets. &#8220;App&#8221; is now a household word.</p>
+
+<p>All of this, because of the iPhone.&nbsp;<a class="permalink" title="Permanent link to ‘The iPhone and Disruption: Five Years In’" href="http://daringfireball.net/2012/07/iphone_disruption_five_years_in">&#9733;</a></p>
+
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1-2012-07-02">
+<p>I wonder how many people would have formed a different, more accurate, perception of the iPhone and its implications for the future if Apple hadn&#8217;t put &#8220;phone&#8221; in the name. Ken Segall recently revealed that <a href="http://www.pcadvisor.co.uk/news/apple/3361300/steve-jobs-silly-apple-names-enemies-rows-with-jony-ive/">one of the first names Apple considered for the iPhone was &#8220;iPad&#8221;</a>, which, if you think about it, is actually a more apt name for the thing. The iPhone is not a phone with other secondary features. It&#8217;s a general purpose pocket-sized touchscreen computer, that happens to include cellular phone networking as a feature.</p>
+
+<p>Marketing-wise, it&#8217;s hard to argue with the iPhone&#8217;s success. And I suspect the misdirection of the &#8220;phone&#8221; in &#8220;iPhone&#8221; helped Apple in this regard. By framing it merely as a cool new phone rather than a revolutionary new computing platform, Apple positioned the iPhone as something people in the mass market already thought they wanted. But I think the &#8220;iPhone&#8221; name also misdirected pundits, analysts, and <a href="http://parislemon.com/post/17002229521/lets-see-how-the-competition-goes-just-to">competing executives</a> who should have known better.&nbsp;<a href="#fnr1-2012-07-02"  class="footnoteBackLink"  title="Jump back to footnote 1 in the text.">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+</div> <!-- article -->
+
+<hr class="ookiaks" />
+
+
+<h2 class="dateline">Monday,  2 July 2012</h2>
+<dl class="linkedlist">
+<dt>
+<a href="http://www.avc.com/a_vc/2012/07/mobile-is-where-the-growth-is.html">Where the Growth&#160;Is</a>&nbsp;<a class="permalink" title="Permanent link to ‘Where the Growth Is’" href="http://daringfireball.net/linked/2012/07/02/where-the-growth-is">&#9733;</a>
+</dt>
+<dd>
+<p>Fred Wilson, &#8220;Mobile Is Where The Growth Is&#8221;:</p>
+
+<blockquote>
+  <p>There is a significant shift going on this year, much more
+significant than we saw last year, from web to mobile. It is most
+noticeable in games, social networking, music, and news, but it is
+happening across the board and it presents both great opportunity
+and great challenges.</p>
+
+<p>Mobile native services like Foursquare and Instagram have the most
+to gain from this transition. Big feature rich web apps like
+Facebook and Google have the most to lose from this transition.</p>
+</blockquote>
+
+<p>A sea change is indeed underway, but Wilson either misses it or is being obtuse. Companies Wilson mentions: Microsoft, Google, RIM, Facebook, Yahoo. Not mentioned: Apple.</p>
+
+<p>There&#8217;s no mystery here. We&#8217;re talking about two platforms: iOS and Android. (Microsoft is doing its best to join that party with Windows 8.) It&#8217;s not &#8220;mobile vs. the web&#8221;. The web is a huge part of what people do on iPhones, iPads, and Android devices. It&#8217;s post-PC vs. PC, in Apple&#8217;s parlance. Modern vs. traditional computing devices. Pretty much every instance of &#8220;mobile&#8221; could be replaced by &#8220;modern&#8221; in Wilson&#8217;s piece, and it would read better.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.asymco.com/2012/07/02/rims-tailspin/">RIM’s Tailspin</a>&nbsp;<a class="permalink" title="Permanent link to ‘RIM’s Tailspin’" href="http://daringfireball.net/linked/2012/07/02/rim-tailspin">&#9733;</a>
+</dt>
+<dd>
+<p>Horace Dediu illustrates RIM&#8217;s decline.</p>
+
+<p>By the numbers, Nokia looks like it&#8217;s on a similar trajectory, but there&#8217;s one key difference: Nokia has their next-generation phones on the market. It doesn&#8217;t seem like the Lumia handsets are setting the world on fire, but at least they have a chance. With RIM&#8217;s next-generation phones not coming until 2013, they&#8217;ve got no chance.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.onefoottsunami.com/2012/07/02/the-fauxback-uniform/">Tampa Bay’s Fauxback&#160;Uniform</a>&nbsp;<a class="permalink" title="Permanent link to ‘Tampa Bay’s Fauxback Uniform’" href="http://daringfireball.net/linked/2012/07/02/tampa-bay-fauxback">&#9733;</a>
+</dt>
+<dd>
+<p>Paul Kafasis on the Tampa Bay Rays&#8217; fake throwback uniforms. I don&#8217;t mind that they made up a fictional uniform, but it&#8217;s a shame they didn&#8217;t do something more than just change the colors of those classic &#8217;70s Padre uniforms.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.virtualpants.com/post/26340670877/a-weekend-with-chrome-for-ios">A Weekend With Chrome for&#160;iOS</a>&nbsp;<a class="permalink" title="Permanent link to ‘A Weekend With Chrome for iOS’" href="http://daringfireball.net/linked/2012/07/02/chrome-ios-weekend">&#9733;</a>
+</dt>
+<dd>
+<p>Virtual Pants:</p>
+
+<blockquote>
+  <p>Edge swiping to switch between tabs works great and hopefully will
+make its way into other iOS apps in the future. Switching between
+tabs on the iPad is even better, as you can switch between
+multiple tabs with a single swipe. Opening a new tab instantly
+refreshes the tab, showing you the old version of the page in
+black and white until the new one is available. Sounds pretty
+great. So, why switch back to Safari? Here’s why.</p>
+</blockquote>
+
+<p>I agree with pretty much everything in this review. Chrome&#8217;s experience is all about the omnibox. Me, I actually make pretty heavy use of bookmarks (and bookmarklets), so it makes a big difference to me that Safari puts those one tap away. Especially on the phone, I prefer tapping to typing.</p>
+
+</dd>
+
+
+</dl>
+
+<h2 class="dateline">Saturday, 30 June 2012</h2>
+<dl class="linkedlist">
+<dt>
+<a href="http://www.theverge.com/2012/6/29/3125396/google-nexus-7-review">Josh Topolsky Reviews the Nexus&#160;7</a>&nbsp;<a class="permalink" title="Permanent link to ‘Josh Topolsky Reviews the Nexus 7’" href="http://daringfireball.net/linked/2012/06/30/nexus-7-topolsky">&#9733;</a>
+</dt>
+<dd>
+<p>Seems to be the undisputed best 7-inch tablet, and the most interesting non-phone Android device yet made.</p>
+
+</dd>
+
+
+</dl>
+
+<h2 class="dateline">Friday, 29 June 2012</h2>
+<dl class="linkedlist">
+<dt>
+<a href="https://tapstream.com/?df">Tapstream for iOS, Mac, and&#160;Android</a>&nbsp;<a class="permalink" title="Permanent link to ‘Tapstream for iOS, Mac, and Android’" href="http://daringfireball.net/linked/2012/06/29/tapstream">&#9733;</a>
+</dt>
+<dd>
+<p>My thanks to Tapstream for sponsoring this week&#8217;s DF RSS feed. Tapstream is a new tool for iOS, Mac, and Android developers that lets you understand how users are finding your app, and measure which social networks, websites, and marketing campaigns are driving traffic. It&#8217;s super-easy to implement: just add a snippet of JavaScript to your website and add their SDK to your app. That&#8217;s it. This week only, DF readers who install Tapstream&#8217;s SDK get a lifetime Pro account for free (regular price: $40 per month).</p>
+
+<p>My favorite part: Tapstream was built by app developers for app developers, and <a href="https://tapstream.com/?df">one of the ways they tested it</a> was to measure the effectiveness of a Daring Fireball RSS feed sponsorship. The result: they booked two more DF sponsorships.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.gearlive.com/news/article/q108-flash-on-iphone-is-just-around-the-corner/">World’s Longest Corner</a>&nbsp;<a class="permalink" title="Permanent link to ‘World’s Longest Corner’" href="http://daringfireball.net/linked/2012/06/29/worlds-longest-corner">&#9733;</a>
+</dt>
+<dd>
+<p>Andru Edwards, back in February 2008, &#8220;Flash on iPhone Is Just Around the Corner&#8221;:</p>
+
+<blockquote>
+  <p>Well, we’ve just got word from a reliable source that Flash
+support is on its way to the iPhone, and it should be coming very,
+very soon.</p>
+</blockquote>
+
+<p><a href="http://daringfireball.net/2008/02/news_flash_no_flash">Called it</a>.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.slashgear.com/apple-granted-preliminary-sales-ban-of-galaxy-nexus-29236534/">Apple Granted Preliminary Sales Ban of Galaxy&#160;Nexus</a>&nbsp;<a class="permalink" title="Permanent link to ‘Apple Granted Preliminary Sales Ban of Galaxy Nexus’" href="http://daringfireball.net/linked/2012/06/29/apple-nexus-sales-ban">&#9733;</a>
+</dt>
+<dd>
+<p>Chris Davies, writing for Slashgear:</p>
+
+<blockquote>
+  <p>Apple has been granted a preliminary sales injunction against the
+Samsung Galaxy Nexus in the US, with the Cupertino company now
+required to stump up a $96m bond in order to secure the ban. The
+decision was tweeted by Reuters’ Dan Levine, and follows a win
+earlier this week for Apple against the Samsung Galaxy Tab 10.1,
+with the US court granting a preliminary injunction against the
+Android tablet in the US.</p>
+</blockquote>
+
+<p>What does this mean for the Nexus 7?</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.virtualpants.com/post/26147935178/google-is-slowly-cracking-open-ios">Don’t Annoy Users</a>&nbsp;<a class="permalink" title="Permanent link to ‘Don’t Annoy Users’" href="http://daringfireball.net/linked/2012/06/29/dont-annoy-users">&#9733;</a>
+</dt>
+<dd>
+<p>Virtual Pants:</p>
+
+<blockquote>
+  <p>It’s easy to figure out why Apple doesn’t want default third-party
+apps. It would cede control of the iOS experience to
+third-parties. Imagine a Google user with an iPhone replacing most
+of the core apps with Google counterparts. An iPhone home screen
+with Chrome, Gmail, Drive, Docs, Calendar, Contacts, Music, Maps,
+Listen, Now, and Google+ is Apple’s worst nightmare. Unhappy
+iPhone users who would like to use Google services in a more
+integrated manner and can’t are also Apple’s worst nightmare.</p>
+</blockquote>
+
+<p>No, Apple&#8217;s worst nightmare is someone buying an Android phone instead of an iPhone. If you buy an iPhone, Apple wins, that&#8217;s all there is to it. Every iOS user who chooses to use a third-party app as their preferred client for web browsing, email, calendaring, etc. is annoyed every single time they click a web/email/event URL and are taken to an iOS system app that they don&#8217;t want to use.</p>
+
+<p>&#8220;Don&#8217;t annoy users&#8221; is a good rule of thumb, and the inability to specify third-party apps as default handlers for these things is annoying.</p>
+
+<p>If Apple does not want iOS users to use Chrome (to name one example), they should not have allowed it into the App Store. If they allowed it into the App Store, then they should allow it to be specified as the default browser.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://rampantspeculation.squarespace.com/home/2012/6/29/on-chrome-for-ios.html">On the Lack of User-Choosable Default Apps in&#160;iOS</a>&nbsp;<a class="permalink" title="Permanent link to ‘On the Lack of User-Choosable Default Apps in iOS’" href="http://daringfireball.net/linked/2012/06/29/ios-default-apps">&#9733;</a>
+</dt>
+<dd>
+<p>Conrad MacIntyre:</p>
+
+<blockquote>
+  <p>I suspect the reason is because of the deep system integration of
+things like Safari, Mail, Contacts, and the like. Take Mail, for
+example, if you could set Sparrow as your default client on iOS
+you&#8217;d still have to configure Mail because any email sent from
+other apps uses the Mail API. Then rely on IMAP to sync those
+things up. Inelegant and un-Apple.</p>
+</blockquote>
+
+<p>That&#8217;s a good point about email, but it doesn&#8217;t apply to web browsing. There is no &#8220;Safari&#8221; sheet in iOS. And even for email, the answer is that iOS should allow third-party apps &#8212; like Sparrow &#8212; to provide their own system-wide sharing sheets.</p>
+
+</dd>
+
+
+<dt>
+<a href="https://twitter.com/greggretsch/statuses/218052452820336641">The iPhone’s Effect on the Phone&#160;Industry</a>&nbsp;<a class="permalink" title="Permanent link to ‘The iPhone’s Effect on the Phone Industry’" href="http://daringfireball.net/linked/2012/06/29/iphone-industry">&#9733;</a>
+</dt>
+<dd>
+<p>Greg Gretsch, on Twitter:</p>
+
+<blockquote>
+  <p>Since release of iPhone 5 years ago, market caps of companies most
+affected: $AAPL +376%; $GOOG +9%; $RIMM -85%; $NOK -89%</p>
+</blockquote>
+
+<p>I&#8217;ll add two more:</p>
+
+<ul>
+<li><a href="http://www.wolframalpha.com/input/?i=msft+july+2007-2012">Microsoft</a> +0.6%</li>
+<li><a href="http://www.wolframalpha.com/input/?i=samsung+stock+july+2007-2012">Samsung</a> +36%</li>
+</ul>
+
+</dd>
+
+
+<dt>
+<a href="https://twitter.com/wsj/status/218440250605846528">WSJ: ‘Research in Motion Says Its New BlackBerry 10 Smartphone Won’t Be Released Until First-Quarter&#160;2013’</a>&nbsp;<a class="permalink" title="Permanent link to ‘WSJ: ‘Research in Motion Says Its New BlackBerry 10 Smartphone Won’t Be Released Until First-Quarter 2013’’" href="http://daringfireball.net/linked/2012/06/29/blackberry-10">&#9733;</a>
+</dt>
+<dd>
+<p>What&#8217;s the over/under that RIM is still an independent company in Q1 2013?</p>
+
+</dd>
+
+
+<dt>
+<a href="http://muleradio.net/thetalkshow/7/">‘Hot Ladies in Movies’</a>&nbsp;<a class="permalink" title="Permanent link to ‘‘Hot Ladies in Movies’’" href="http://daringfireball.net/linked/2012/06/29/the-talk-show-007">&#9733;</a>
+</dt>
+<dd>
+<p>This week&#8217;s episode of The Talk Show, with two special guests: <a href="http://johnaugust.com/">John August</a> and <a href="http://lonelysandwich.com/">Adam Lisagor</a>. Topics include Google&#8217;s announcements at I/O, Apple&#8217;s new Podcasts app, creating apps to solve your own problems, and a whole bunch of talk about movies and filmmaking.</p>
+
+<p>Brought to you by two great sponsors that go great together: <a href="http://www.olloclip.com/?utm_source=DaringFireball&amp;utm_medium=banner&amp;utm_campaign=DaringFireball-201206">Olloclip</a>, a three-in-one camera lens accessory for the iPhone 4/4S; and <a href="http://www.globaldelight.com/iphone/camerapluspro/?utm_source=daringfireball&amp;utm_medium=banner&amp;utm_campaign=dftalkshow062012">Camera Plus Pro</a>, a killer camera/photo filtering app for iPhone.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.businessinsider.com/bertrand-serlet-is-working-on-a-mystery-startup-in-palo-alto-with-ex-apple-employees-2012-6?op=1">Bertrand Serlet’s Stealth Startup:&#160;Upthere</a>&nbsp;<a class="permalink" title="Permanent link to ‘Bertrand Serlet’s Stealth Startup: Upthere’" href="http://daringfireball.net/linked/2012/06/29/bertrand-stealth">&#9733;</a>
+</dt>
+<dd>
+<p>Speaking of Apple executives who went out on top, Seth Flegerman at Business Insider has a wee bit of a scoop on what Bertrand Serlet is up to. I heard a whiff about this at WWDC; he&#8217;s definitely got some A-list UI designers on board.</p>
+
+<p><strong>Update:</strong> <a href="http://upthere.com/jobs/">Upthere&#8217;s simple job-listing page</a>.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.apple.com/pr/library/2012/06/28Bob-Mansfield-Apples-Senior-Vice-President-of-Hardware-Engineering-to-Retire.html">Bob Mansfield, Apple’s Senior Vice President of Hardware Engineering, to&#160;Retire</a>&nbsp;<a class="permalink" title="Permanent link to ‘Bob Mansfield, Apple’s Senior Vice President of Hardware Engineering, to Retire’" href="http://daringfireball.net/linked/2012/06/29/mansfield">&#9733;</a>
+</dt>
+<dd>
+<p>Apple PR:</p>
+
+<blockquote>
+  <p>“Bob has been an instrumental part of our executive team, leading
+the hardware engineering organization and overseeing the team that
+has delivered dozens of breakthrough products over the years,”
+said Tim Cook, Apple’s CEO. “We are very sad to have him leave and
+hope he enjoys every day of his retirement.” [&#8230;]</p>
+
+<p>As senior vice president of Hardware Engineering, Mansfield has
+led Mac hardware engineering since 2005, iPhone and iPod hardware
+engineering since 2010, and iPad hardware engineering since its
+inception. Mansfield joined Apple in 1999 when Apple acquired
+Raycer Graphics, where he was vice president of Engineering.
+Mansfield earned a BSEE degree from the University of Texas at
+Austin in 1982.</p>
+</blockquote>
+
+<p>It&#8217;s a high-pressure job. Tim Bucher cracked and got fired from it in 2004, <a href="http://www.macobserver.com/tmo/article/Former_Exec_Tim_Bucher_Sues_Apple_for_Wrongful_Termination_UPDATE/">and it was ugly</a>. <a href="http://daringfireball.net/linked/2010/08/07/papermaster">Mark Papermaster was shown the door</a> in 2010 after Antennagate.</p>
+
+<p>Mansfield, to my knowledge, is going out on top.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.microsoft.com/en-us/preview/">Microsoft’s New Home&#160;Page</a>&nbsp;<a class="permalink" title="Permanent link to ‘Microsoft’s New Home Page’" href="http://daringfireball.net/linked/2012/06/29/microsoft-home-page">&#9733;</a>
+</dt>
+<dd>
+<p>No idea why this is a &#8220;Preview&#8221; &#8212; they should just ship it. Really nice design work.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.engadget.com/2012/06/28/adobe-confirms-it-wont-support-flash-on-android-4-1/">Adobe Confirms It Won’t Support Flash on Android 4.1, Stops New Flash Installs From Google Play on August&#160;15</a>&nbsp;<a class="permalink" title="Permanent link to ‘Adobe Confirms It Won’t Support Flash on Android 4.1, Stops New Flash Installs From Google Play on August 15’" href="http://daringfireball.net/linked/2012/06/29/flash-android">&#9733;</a>
+</dt>
+<dd>
+<p>Good thing no one ever thought the lack of Flash Player support on the iPhone was a problem, otherwise I&#8217;d have to look it all up and I&#8217;d be cooking claim chowder all day.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.tbray.org/ongoing/When/201x/2012/06/29/Becoming-an-Identity-guy">Tim Bray Now Working on Identity at&#160;Google</a>&nbsp;<a class="permalink" title="Permanent link to ‘Tim Bray Now Working on Identity at Google’" href="http://daringfireball.net/linked/2012/06/29/tim-bray-identity">&#9733;</a>
+</dt>
+<dd>
+<p>Tim Bray:</p>
+
+<blockquote>
+  <p>I’ve be­come fas­ci­nated by the tech and pol­icy and de­vel­oper
+is­sues around OAuth, and two things seem ob­vi­ous to me:</p>
+
+<ul>
+<li><p>User­names and pass­words gen­er­ally suck and ob­vi­ously don’t
+scale to the In­ter­net, so we need to do away with ’em soon­est.</p></li>
+<li><p>The new tech­nol­ogy com­ing down the pipe, OAuth 2 and friends,
+is way too hard for de­vel­op­ers; there need to be bet­ter tools
+and ser­vices if we’re going to make this whole In­ter­net thing
+smoother and safer.</p></li>
+</ul>
+</blockquote>
+
+<p>No doubt in my mind that this is one of the big problems to be solved for the industry over the next decade, and Bray&#8217;s two-point bullet list is exactly right: the username/password solution is bad for users in numerous ways, but whatever eventually replaces it needs to be <em>easy</em> for developers.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.guardian.co.uk/technology/2012/jun/29/rim-chiefs-best-quotes">RIM Chiefs Mike Lazaridis and Jim Balsillie’s Best&#160;Quotes</a>&nbsp;<a class="permalink" title="Permanent link to ‘RIM Chiefs Mike Lazaridis and Jim Balsillie’s Best Quotes’" href="http://daringfireball.net/linked/2012/06/29/lazaridis-balsillie">&#9733;</a>
+</dt>
+<dd>
+<p>Charles Arthur:</p>
+
+<blockquote>
+  <p>Mike Lazaridis and Jim Balsillie were the co-chief executives and
+co-chairmen of Research In Motion from its inception in the 1990s
+through to their resignation from the position in January 2012.
+Along the way, the company grew to a behemoth by exploiting its
+unique combination of secure email and keyboard-driven handset &#8212;
+but they also missed some key technology changes that are now
+sweeping RIM away.</p>
+</blockquote>
+
+<p>They pretty much got everything wrong for the last six years.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://www.loopinsight.com/2012/06/29/iphone-turns-5-here-are-the-naysayers/">Vintage Five-Year iPhone Claim&#160;Chowder</a>&nbsp;<a class="permalink" title="Permanent link to ‘Vintage Five-Year iPhone Claim Chowder’" href="http://daringfireball.net/linked/2012/06/29/vintage-iphone-claim-chowder">&#9733;</a>
+</dt>
+<dd>
+<p>Tasty.</p>
+
+</dd>
+
+
+<dt>
+<a href="http://daringfireball.net/2007/06/iphone_first_impressions">Five Years Ago:&#160;iPhone</a>&nbsp;<a class="permalink" title="Permanent link to ‘Five Years Ago: iPhone’" href="http://daringfireball.net/linked/2012/06/29/five-years-ago">&#9733;</a>
+</dt>
+<dd>
+<p>Yours truly, five years ago:</p>
+
+<blockquote>
+  <p>I’m just blown away by how nice it is &#8212; very thoughtful UI design
+and outstanding engineering. It is very fun.</p>
+</blockquote>
+
+<p>I love that I considered the screen &#8220;high resolution&#8221;.</p>
+
+</dd>
+
+
+</dl>
+
+<hr class="ookiaks" />
+
+
+<div class="article">
+<h1><a href="http://daringfireball.net/2012/06/surface_between_rock_and_hardware_place" title="Permanent link to ‘Surface: Between a Rock and a Hardware Place’">Surface: Between a Rock and a Hardware&#160;Place</a></h1>
+<h6 class="dateline">Wednesday, 20 June 2012</h6>
+
+<p>Watching <a href="http://www.theverge.com/2012/6/19/3096420/microsoft-surface-event-video-live/in/2859835">the Microsoft Surface event video</a>, I sensed uneasiness. Not panic, but discomfort. Some will argue that I&#8217;m simply spoiled by Apple&#8217;s on-stage polish, but Monday&#8217;s Microsoft event struck me as rushed and severely under-rehearsed. Ballmer offered nothing but blustering bromides, and nothing even vaguely resembling a coherent answer to the big question: Why? Steven Sinofsky was nervous and hurried. It didn&#8217;t help that his first Surface RT unit <a href="http://www.readwriteweb.com/archives/video-surface-vs-ipad-microsofts-getting-rusty-at-stealing-from-apple.php">crashed before he&#8217;d done anything other than wake it up</a>. There was a moment where he said Surface was perfect for sitting down, relaxing in a chair, and watching a movie. He sat in that chair for about three seconds before rushing into the next segment.</p>
+
+<p>I found the presenters far less rehearsed and the presentation far less cohesive than an Apple event. (With the notable exception of designer Panos Panay, who was very solid on stage.) There was no story. It was all over the place: <em>Here&#8217;s an ARM tablet. Here&#8217;s the clever keyboard cover that goes with it. Now here&#8217;s another tablet that looks much the same but a little thicker but in fact is running a different and incompatible OS. Oh and here&#8217;s another keyboard cover, this one with moving keys.</em> Design is about making decisions, and Microsoft could not decide. ARM or Intel? Who should be on stage? Soft or hard keys on the keyboard cover? They went with &#8220;all of the above&#8221;.</p>
+
+<p>The only hard decision they made was the big one: to turn against their OEM hardware partners.</p>
+
+<p>I presume Microsoft timed this event to jump ahead of anything Google might be announcing at their I/O conference next week &#8212; and the consensus seems to be that Google is going to announce much the same idea: their own Google-branded, Google-designed tablet that will put them in direct competition not just with Apple but with their own OS licensees.</p>
+
+<p>But no pricing, no battery life specs, no demonstrations of the seemingly extraordinarily clever cover-keyboards in action, or really much in the way of software demonstrations, period? That&#8217;s rough, even by the standards of pre-announcements. Skepticism about these things doesn&#8217;t require knee-jerk Apple fandom. It simply requires an open set of eyeballs. The message I took away is that Microsoft has concluded that, ready or not, it needed to move now. There is no longer enough profit to be had selling software alone.</p>
+
+<hr />
+
+<p>Remember <a href="http://itunes.apple.com/us/podcast/apple-announces-ipad/id275834665?i=80469507">the introduction of the original iPad</a> at the end of January 2010? The only product Steve Jobs talked about on stage was the iPad, but the presentation was about much more. Jobs opened by talking about Apple having crossed the $50 billion annual revenue threshold. (They&#8217;ve since gone on to cross the $100 billion threshold.) And they spent a large part of the event talking about the iPad&#8217;s integrated system-on-a-chip, the A4. I concluded <a href="http://daringfireball.net/2010/01/ipad_big_picture">my take on the event</a> thus:</p>
+
+<blockquote>
+  <p>They’re Microsoft and Intel rolled into one when it comes to
+mobile computing. In the pre-taped video Apple showed, Bob
+Mansfield said of the iPad, “No one else could do it.” Only Apple.</p>
+
+<p>And so my takeaway from this &#8212; with the bragging about making
+their own CPUs and their annual revenue and their size compared
+to companies like Sony, Samsung, and Nokia &#8212; is that this is
+Apple’s way of asserting that they’re taking over the penthouse
+suite as the strongest and best company in the whole
+ones-and-zeroes racket.</p>
+</blockquote>
+
+<p>This, it&#8217;s now clear, was correct. If anything, it was understated &#8212; Apple is now the strongest and most successful company in the world, across any and all industries.</p>
+
+<p>If not for the iPad &#8212; imagine, for a moment, that the company still to this day had not shipped a tablet &#8212; Apple would still be thriving, based on huge (and hugely profitable) iPhone sales and the Mac&#8217;s steady continuing growth (six years of consecutive quarterly growth ahead of the overall PC industry). But it was the iPad that pushed Apple over the top. The iPhone suggested Apple would dominate pocket computing. The iPad suggests Apple will dominate computing, period.</p>
+
+<p>Microsoft this week showed itself willing to do what was once unthinkable: design and sell its own PC hardware. This is a profound change of direction for Microsoft and the entire PC industry. The iPad, however, has been out for so long and has been so successful that no one seemed shocked by Microsoft&#8217;s announcement. But make no mistake: for better or for worse, Surface marks a watershed moment in PC industry history.</p>
+
+<p><a href="https://twitter.com/harrymccracken/status/214917669491720192">Harry McCracken</a>:</p>
+
+<blockquote>
+  <p>After 37 years, Microsoft agrees with Alan Kay: &#8220;People who are
+really serious about software should make their own hardware.&#8221;</p>
+</blockquote>
+
+<p>The ever-astute Lessien, tweeting <a href="https://twitter.com/Lessien/status/214893940854374403">shortly after Microsoft&#8217;s event</a>:</p>
+
+<blockquote>
+  <p>Microsoft&#8217;s move today suggests it feared the irretrievable loss
+of the tablet market to iPad, if it continued to rely on
+third-party OEMs.</p>
+</blockquote>
+
+<p>I&#8217;d go further, and argue they fear losing not just the tablet market, but the PC market as a whole. Not in sheer numbers, but in sheer <em>profit</em>. Apple doesn&#8217;t want to sell all of the world&#8217;s computers and phones; rather, Apple wants to reap all the profits in the computer and phone industries. There is no threat that Windows goes away, but there is a serious threat that Microsoft&#8217;s profit from Windows greatly diminishes.</p>
+
+<p><a href="http://www.asymco.com/2012/06/20/who-will-be-microsofts-tim-cook/">Horace Dediu, today</a>:</p>
+
+<blockquote>
+  <p>If we simply divide revenues by PCs sold we get about $55 Windows
+revenues per PC and $68 of Office revenues per PC sold. The
+total income for Microsoft per PC sold is therefore about $123. If
+we divide operating income by PCs as well we get $35 per Windows
+license and $43 per Office license. That’s a total of $78 of
+operating profit per PC.</p>
+
+<p>Now let’s think about a post-PC future exemplified by the iPad.
+Apple sells the iPad with a nearly 33% margin but at a higher
+average price than Microsoft’s software bundle. Apple gives away
+the software (and apps are very cheap) but it still gains $195 in
+operating profit per iPad sold.</p>
+
+<p>Fine, you say, but Microsoft make up for it in volume. Well,
+that’s a problem. The tablet volumes are expanding very quickly
+and are on track to overtake traditional PCs while traditional PCs
+are likely to be disrupted and decline.</p>
+
+<p>So Microsoft faces a dilemma. Their business model of expensive
+software on cheap hardware is not sustainable. The future is
+nearly free software integrated into moderately priced hardware.</p>
+</blockquote>
+
+<p>There we have it: four short paragraphs that explain why Microsoft has turned its guns against PC-making OEMs. This move was driven by the iPad, but competitively it directly pits Microsoft not against Apple but against Dell, HP, Toshiba, et al. The intention is obviously to slow the iPad down, but the radical shift in Microsoft&#8217;s strategy is about the fight over the profits that remain after Apple&#8217;s. The math no longer works out for the Windows <em>you-sell-the-hardware-we-sell-the-software</em> model. It works for unit share (cf. Android), but it doesn&#8217;t for profit share. Nothing works sustainably in business without profit &#8212; profit is the oxygen companies breathe.</p>
+
+<p>Even if Apple&#8217;s growth soon slows, Apple already reaps a massive share of the industry&#8217;s profits. And if Apple&#8217;s growth <em>doesn&#8217;t</em> slow in the next year or two, look out. All of Apple&#8217;s competitors in the phone industry, save Samsung, are now starving for profit. They&#8217;re dying, all of them &#8212; HTC is breaking even and the rest are deep in the red.</p>
+
+<p><a href="http://daringfireball.net/2012/04/ipad_sales_context">The iPad is growing faster than the iPhone</a>. The Mac already owns the $999-and-over market (where the margins are), and the iPad owns the tablet market (where the growth is). The PC market is quickly heading to where the phone market already is.</p>
+
+<p>Microsoft Surface is <em>not</em> fundamentally about Microsoft needing to control the entire integrated product in order to compete with the iPad on design. It&#8217;s about Microsoft needing to sell the whole thing to sustain its current profitability.</p>
+
+<p>Surface is a bold move, and classic Microsoft. If the OEMs don&#8217;t like it &#8212; <a href="http://www.reuters.com/article/2012/06/19/us-microsoft-windows-tablets-asia-idUSBRE85I1NL20120619">and they do not</a> &#8212; what are they going to do? Turn to Linux (which no one wants) or Android (which no one wants on anything other than phones)? It&#8217;s the OEMs whom Microsoft thinks Surface can put into checkmate, not Apple.</p>
+
+<p>If I&#8217;m right, it&#8217;s inevitable now that Microsoft will acquire Nokia.&nbsp;<a class="permalink" title="Permanent link to ‘Surface: Between a Rock and a Hardware Place’" href="http://daringfireball.net/2012/06/surface_between_rock_and_hardware_place">&#9733;</a></p>
+
+</div> <!-- article -->
+
+<hr class="ookiaks" />
+
+
+<div class="article">
+<h1><a href="http://daringfireball.net/2012/06/three_takeaways_wwdc" title="Permanent link to ‘Three Takeaways From Today’s WWDC Keynote’">Three Takeaways From Today’s WWDC&#160;Keynote</a></h1>
+<h6 class="dateline">Monday, 11 June 2012</h6>
+
+<h2>1.</h2>
+
+<p>On the software side, Apple has &#8212; dare I say <em>finally</em> &#8212; become a company that can walk and chew gum at the same time. Remember back in 2007 when Mac OS X 10.5 (Leopard) was delayed six months because, <a href="http://www.tuaw.com/2007/04/12/apple-announces-leopard-delays-due-to-the-iphone/">Apple flat-out admitted</a>, they had to pull engineering talent from Mac OS X to work on iOS 1 for the original iPhone? They don&#8217;t seem to have that problem any more.</p>
+
+<p>Today, Apple has two OSes that are both in active concurrent development. Year-over-year, it&#8217;s hard to say which OS has seen the most improvement.</p>
+
+<h2>2.</h2>
+
+<p>The new &#8220;next-generation&#8221; MacBook Pro with Retina Display is, in short, &#8220;Back to the Mac&#8221; for hardware. This is an iOS-inspired appliance &#8212; battery, RAM, solid state storage &#8212; all of it is sealed in a magnificent enclosure. Consider too that it no longer even says &#8220;MacBook Pro&#8221; on the front of the display. It&#8217;s just like an iOS device &#8212; a brilliant display surrounded by black glass.</p>
+
+<p>I have a review unit from Apple, and after just 15 minutes or so trying it out, it&#8217;s damn impressive. Much like with the iPhone and iPad, it&#8217;s not so much that the retina display looks good as that, after you&#8217;ve used it for even just a few minutes, non-retina display MacBooks look bad. It&#8217;s not just pixel size, either &#8212; color, brightness, viewing angles &#8212; everything about it is amazing. Best display I&#8217;ve ever seen, period.</p>
+
+<p>The catch is that it&#8217;s expensive. That&#8217;s why it debuted alongside a brand-new update to the 15-inch non-retina MacBook Pro, rather than replacing it. If you can afford it (and don&#8217;t need the optical drive or spinning hard disk), you want the new one. And surely we&#8217;re going to see displays of this caliber roll out across the MacBook line, one by one, as soon as it becomes economically feasible. (And, I presume, the iMac and Cinema Displays, too. It&#8217;s just a matter of time.)</p>
+
+<p>Best to compare it to the original MacBook Air from 2008. The first Air was expensive and not for everyone, but it showed the future of Apple&#8217;s (and, really, the industry&#8217;s) portables. That&#8217;s what the new 15-inch MacBook Pro is: the future of portable Macs.</p>
+
+<h2>3.</h2>
+
+<p>Starting with the opening gag with Siri doing stand-up comedy and continuing through to Apple&#8217;s new maps and Siri&#8217;s new features, there was an unmistakeable &#8220;Fuck you, Google&#8221; undertone to the whole keynote. Apple is forcing Google out of iOS. Even the Facebook integration feels like a &#8220;the enemy of my enemy is my friend&#8221; alliance.</p>
+
+<p>I’ve <a href="http://daringfireball.net/linked/2012/03/29/google-android-profits">said it before</a> and will say it again: Google made a mistake by deciding to oppose rather than ally with Apple on mobile.&nbsp;<a class="permalink" title="Permanent link to ‘Three Takeaways From Today’s WWDC Keynote’" href="http://daringfireball.net/2012/06/three_takeaways_wwdc">&#9733;</a></p>
+
+</div> <!-- article -->
+
+<hr class="ookiaks" />
+
+
+<div id="Footer">
+<form id="SiteSearch" action="/search" method="get" style="margin-bottom: 2.5em;">
+<div>
+<input name="q" type="text" value="" style="margin-right: 8px; width: 26em;" />
+<input type="submit" value="Search" />
+</div>
+</form>
+<p class='smallprint'><a href='http://www.amazon.com/exec/obidos/redirect?tag=daringfirebal-20&amp;path=subst/home/home.html'>Shop at Amazon.com and support Daring Fireball</a></p>
+
+<p class="smallprint">
+<a href="/linked/" title="Recent Linked List entries and archive.">Linked List</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="/preferences/" title="Customize the font size and presentation options for this web site.">Display Preferences</a><br />
+Copyright &copy; 2002–2012 John Gruber</p>
+</div>
+
+<div id="SidebarTheDeck">
+<script type="text/javascript">
+// <![CDATA[
+  (function(id) {
+    document.write('<script type="text/javascript" src="' +
+      'http://connect.decknetwork.net/deck' + id + '_js.php?' +
+      (new Date().getTime()) + '"></' + 'script>');
+  })("DF");
+  var deckDiv = document.getElementById("SidebarTheDeck");
+  var sidebarDiv = document.getElementById("Sidebar");
+  sidebarDiv.appendChild(deckDiv);
+// ]]>
+</script>
+<a href="http://decknetwork.net/">
+<img id="ViaTheDeck"   src="http://daringfireball.net/graphics/madison/via_the_deck.png"    alt="Ads via The Deck" class="the_deck_promo" width="70" />
+<span id="ViaTheDeck2x">Ads via The Deck</span>
+</a>
+
+</div>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-593949-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+</div> <!-- Main -->
+
+</div> <!-- Box -->
+</body>
+</html>
+<!-- 0.0003 seconds -->
