@@ -19,7 +19,7 @@ Stop complaining. Start fixing.
 ### Installation
 You can install the bookmarklet simply by dragging the following link to your browser's bookmark bar:
 
-[Retrofit](javascript: (function () {var jsCode = document.createElement('script');jsCode.setAttribute('src', 'https://raw.github.com/sparkbox/responsive-retrofitting/master/responsive-retrofit.js');document.body.appendChild(jsCode);}());)
+[Retrofit](javascript: (function (\) {var jsCode = document.createElement('script'\);jsCode.setAttribute('src', 'https://raw.github.com/sparkbox/responsive-retrofitting/master/responsive-retrofit.js'\);document.body.appendChild(jsCode\);}(\)\);)
 
 ### Use
 Now, you can visit any of these sites and run the bookmarklet to see the changes.
