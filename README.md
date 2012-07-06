@@ -17,9 +17,7 @@ This simple little bookmarklet gives you a chance to do something about the bad 
 Stop complaining. Start fixing.
 
 ### Installation
-You can install the bookmarklet simply by dragging the following link to your browser's bookmark bar:
-
-[Retrofit](javascript:%20(function%20(\)%20{var%20jsCode=document.createElement('script'\);jsCode.setAttribute('src','https://raw.github.com/sparkbox/responsive-retrofitting/master/responsive-retrofit.js'\);document.body.appendChild(jsCode\);}(\)\);)
+[Read this page for installation instructions.](http://sparkbox.github.com/Responsive-Retrofitting)
 
 ### Use
 Now, you can visit any of these sites and run the bookmarklet to see the changes.
