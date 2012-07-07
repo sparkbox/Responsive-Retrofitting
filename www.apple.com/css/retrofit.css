@@ -1,9 +1,12 @@
-/*	320px
+/*	480px
 	-------------------------------------------------------------------------- */
-	@media only screen and (min-width: 20em) {
-		#globalheader { width:100%; }
-		#globalheader #globalnav { width:100%; }
-		#globalheader #globalnav li { display:block; float:left; width:50%;  }
+	@media only screen and (max-width: 30em) {
+		#globalheader { width:95%; margin:18px auto; }
+		#globalheader #globalnav { width:100%; float:none; }
+			#globalheader ul#globalnav:after { content:""; display:table; clear:both; }
+		#globalheader #globalnav li { display:block; float:left; width:50%; box-sizing:border-box; }
+		#globalheader, #globalheader #globalnav, #globalheader #globalnav li, #globalheader #globalnav li a { height:auto; }
+		#globalsearch { display:none; } /* Fix this */
 	}
 
 @media all and (max-width: 990px) {
