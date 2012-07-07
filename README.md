@@ -1,7 +1,7 @@
 # Responsive Retrofitting
 ## [Ben Callahan](http://twitter.com/bencallahan), [Sparkbox](http://seesparkbox.com)
 
-This repo is an experiment in responsive retrofitting. It's a positive response to more negative (but still much needed) critiques of the mobile web like [Brad Frost's])http://twitter.com/brad_frost) [WTF Mobile Web](http://wtfmobileweb.com).
+This repo is an experiment in responsive retrofitting. It's a positive response to more negative (but still much needed) critiques of the mobile web like [Brad Frost's](http://twitter.com/brad_frost) [WTF Mobile Web](http://wtfmobileweb.com).
 
 Let's get started...
 
