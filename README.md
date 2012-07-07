@@ -16,6 +16,8 @@ This simple little bookmarklet gives you a chance to do something about the bad 
 
 Stop complaining. Start fixing.
 
+Also, one note. This is only working in WebKit browsers right now. If someone wants to help me figure out why, I'd be much obliged.
+
 ### Installation
 [Read this page for installation instructions.](http://sparkbox.github.com/Responsive-Retrofitting)
 
