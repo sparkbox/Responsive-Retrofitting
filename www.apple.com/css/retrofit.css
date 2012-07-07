@@ -1,29 +1,56 @@
-/*	480px
+/*	320px
 	-------------------------------------------------------------------------- */
-	@media only screen and (max-width: 30em) {
-		#globalheader { width:95%; margin:18px auto; }
-		#globalheader #globalnav { width:100%; float:none; }
+	@media only screen and (min-width: 20em) {
+		#globalheader { width:95%; margin:18px auto; background:none; box-shadow: none;	}
+		#globalheader #globalnav { display:block; width:100%; float:none; -webkit-border-radius:4px; background:#666; }
 			#globalheader ul#globalnav:after { content:""; display:table; clear:both; }
-		#globalheader #globalnav li { display:block; float:left; width:50%; box-sizing:border-box; }
+		#globalheader #globalnav li { display:block; float:left; width:50%; border-radius:0; box-sizing:border-box; }
+		#globalheader #globalnav li a { -webkit-border-image:none; }
 		#globalheader, #globalheader #globalnav, #globalheader #globalnav li, #globalheader #globalnav li a { height:auto; }
-		#globalsearch { display:none; } /* Fix this */
+		#globalheader #globalsearch { float:none; clear:both; width:100%; position:relative; margin:10px auto; box-sizing:border-box; }
+		#globalheader #sp-searchtext { -webkit-border-radius:50%; border-radius:50%; }
+		#sp-searchtex { width:100%; }
+		
+		
+		#main {
+			min-width: inherit;
+		}
+		
+		#billboard {
+			width: 100%;
+		}
+		#billboard #hero hgroup {
+			width: 38.77551;
+		}
+		#billboard #hero .hero-image {
+			max-width: 100%;
+			height: auto;
+		}		
+	}
+	
+/*	540px
+	-------------------------------------------------------------------------- */
+	@media only screen and (min-width: 33.750em) {
+		#globalheader #globalnav li { width:33.333333%;}
+	}
+	
+/*	680px
+	-------------------------------------------------------------------------- */
+	@media only screen and (min-width: 42.5em) {
+		#globalheader #globalnav li { width:25%;}
+	}
+	
+/*	768px
+	-------------------------------------------------------------------------- */
+	@media only screen and (min-width: 48em) {
+		#globalheader { background:-webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))), -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))), url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHVQTFRFAAAA%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F5YtmQAAAACd0Uk5TAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmZiD6WAAAAdlJREFUeF7t3btuFEEQheFzunotGYkIERA4spn3fyeHiAgEEtsXB82s2eEJavR%2F0Wjyo75XWfHpw4MkSXNqCkA2lr2%2B%2Fvz63n15qpI0x5yTSAM52XaxJLVXf%2FkoaY6xQk2sgXy8Ql2KJf3wS5HG6HMMQg3kZNkuxVGKNLxJo48%2BxhxTpBrIx7JcXEqUKJI3zd77CjWLaiAle4U6Iixv6q33MfocTL%2BBlCy7OEqJqCFvs%2FV2m3%2BTaiAd6zb7rlHtrbc1VA%2Bm30BSa%2B%2B7RNSo4a21thbVTL%2BBnCy7rCV1rdXbtbXW%2B%2Bh%2Ft78BZLM2v6NE1Fov%2FrpC3Zl%2BA2l5H6lrrRe%2FXNu%2BqCbUQE57qGvsoW5t9D4H028gJculOKLUWuvFz%2B16O9NipAZSsm8nWpfq53ZlTQ3k9s%2BamlADZ0CogZMh1MDJEGrgZAg1cDL%2Fh5ojLSC1%2ByMtLp8A2R0un3BNFEjv%2FpooDzqA9O4fdPD0Esju8PSSIglAdsciCZQzArI7lDOat30yCg8CGe2FB1eovZcI7oMSwUBSq0TwWlQHxfyBEzgW86ftDpDase0ODfKA7A4N8mhlC2R318r2px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC') no-repeat 50% 50%, -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+			-webkit-box-shadow:rgba(0,0,0,0.3) 0 1px 2px;
+		}
+		#globalheader #globalnav { display:table; -webkit-border-radius:0; background:none; }
+		#globalheader #globalnav li { display:table-cell; width:100%;}
 	}
 
-@media all and (max-width: 990px) {
-  #main {
-    min-width: inherit;
-  }
-  
-  #billboard {
-    width: 100%;
-  }
-  #billboard #hero hgroup {
-    width: 38.77551;
-  }
-  
-  #billboard #hero .hero-image {
-    max-width: 100%;
-    height: auto;
-  }
+@media all and (min	-width: 990px) {
+
   
 }
