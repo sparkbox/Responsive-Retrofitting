@@ -1,8 +1,10 @@
-/*
-body {
-  background-color: red;
-}
-*/
+/*	320px
+	-------------------------------------------------------------------------- */
+	@media only screen and (min-width: 20em) {
+		#globalheader { width:100%; }
+		#globalheader #globalnav { width:100%; }
+		#globalheader #globalnav li { display:block; float:left; width:50%;  }
+	}
 
 @media all and (max-width: 990px) {
   #main {
