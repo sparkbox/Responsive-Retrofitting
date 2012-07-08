@@ -1,24 +1,140 @@
-/*
-body {
-  background-color: red;
-}
-*/
+/*	320px
+	-------------------------------------------------------------------------- */
+	@media only screen and (min-width: 20em) {
+		#globalheader { width:95%; margin:18px auto; border:1px solid #444; box-sizing:border-box; background:#666; }
 
-@media all and (max-width: 990px) {
-  #main {
-    min-width: inherit;
-  }
-  
-  #billboard {
-    width: 100%;
-  }
-  #billboard #hero hgroup {
-    width: 38.77551;
-  }
-  
-  #billboard #hero .hero-image {
-    max-width: 100%;
-    height: auto;
-  }
-  
-}
+		#globalheader #globalnav,
+		#globalheader.searchmode #globalnav { display:block; width:100%; float:none; -webkit-border-radius:4px; }
+			#globalheader ul#globalnav:after { content:""; display:table; clear:both; }
+		#globalheader #globalnav li,
+		#globalheader.searchmode #globalnav li { display:block; float:left; width:50%; border-radius:0; box-sizing:border-box; }
+
+		#globalheader #globalnav li a { border-bottom:1px solid #444; -webkit-border-image:none; box-shadow:0 0 1px 1px rgba(255,255,255,0.1) inset; box-sizing:border-box; background:-webkit-linear-gradient(top, #8b8b8b 0%, #5e5e5e 100%); }
+		#globalheader #globalnav li a:hover { box-shadow:none; }
+			#globalheader #globalnav li:first-child a { border-radius:4px 0 0 0; border-bottom:1px solid #444; }
+			#globalheader #globalnav li#gn-store a { border-radius:0 4px 0 0; }
+			#globalheader #globalnav li:nth-child(odd) { border-right:1px solid #444; }
+		#globalheader, #globalheader #globalnav, #globalheader #globalnav li, #globalheader #globalnav li a { height:auto; }
+
+		#globalheader #globalsearch,
+		#globalheader.searchmode #globalsearch { float:none; clear:both; width:100%; position:relative; margin:10px auto; box-sizing:border-box; -webkit-border-image:none; }
+		#globalheader #sp-searchtext { -webkit-border-radius:50%; border-radius:50%; }
+
+		#main { min-width: inherit; }
+		
+		/* MacbookPro with Retina display Hero */
+		#home #billboard { width: 95%; height:auto; margin:auto auto; padding:0 0 20px; }
+		#home #billboard #hero { padding:20px 0 280px; } 
+		#home #billboard #hero hgroup { width: 38.77551; }
+		#home #billboard #hero .hero-image { max-width: 100%; height: auto; top:200px; }
+		
+		#home #billboard #hero hgroup { float:none; width:90%; margin:0 auto; }
+			#home #billboard #hero hgroup h1 { margin-bottom:30px; }
+			#home #billboard #hero hgroup img { max-width: 100%; height: auto; }
+		
+			#home #billboard .videos.bordered { width:100%; position:relative; left:auto; top:auto; }
+		
+		.promos { margin:10px 0 0; }
+		.promos ul { width:95%; margin:auto auto; }
+		.promos ul li { width:47.5%; height:auto; position:relative; margin:0 0 0 5%; }
+			.promos ul li:nth-child(3) { margin:10px 0 0; }
+			.promos ul li.last-child { margin:10px 0 0 5%; }
+		.promos ul li .curve-down { display:block; height:auto; }
+		.promos ul li a.promo-rotate { position:static; }
+		.promos ul li img { max-width:100%; height:auto; }
+		.promos ul li a .play { height:30px; width:30px; top:40px; left:42%; background-size:30px 60px; }
+		
+		#homefooter { width:95%; margin:auto auto; font-size:12px; }
+			#homefooter p.left, 
+			#homefooter #links p.left { float:none; text-align:center; text-indent:0; }
+			#homefooter #links ul.right { float:none; margin:10px 0; }
+		.piped li { float:none; }
+		.piped a { border:none; }
+		.sosumi { font-size:12px !important; }
+		#homefooter .sosumi p,
+		#homefooter .sosumi ul.piped { display:block; padding:0; }
+		#worldwide { display:block; margin:10px auto; text-align:center; }
+	}
+	
+/*	540px
+	-------------------------------------------------------------------------- */
+	@media only screen and (min-width: 33.750em) {
+		#globalheader #globalnav {  }
+		#globalheader #globalnav li,
+		#globalheader.searchmode #globalnav li { display:block; float:left; width:25%; border-right:1px solid #444; }
+			#globalheader #globalnav li#gn-store a { border-radius:0; }
+			#globalheader #globalnav li#gn-ipod a { border-radius:0 4px 0 0; }
+			#globalheader #globalnav li:nth-child(4n) { border-right:none; }
+	}
+	
+/*	680px
+	-------------------------------------------------------------------------- */
+/*
+	@media only screen and (min-width: 42.5em) {
+		#globalheader #globalnav li,
+		#globalheader.searchmode #globalnav li { width:25%;}
+	}
+*/
+	
+/*	768px
+	-------------------------------------------------------------------------- */
+	@media only screen and (min-width: 48em) {
+		#globalheader {  }
+		#globalheader #globalnav,
+		#globalheader.searchmode #globalnav { float:left; width:75%; }
+		#globalheader #globalnav li:nth-child(4n) { border-right:1px solid #444; }
+		#globalheader #globalnav li#gn-iphone,
+		#globalheader #globalnav li#gn-ipad,
+		#globalheader #globalnav li#gn-itunes,
+		#globalheader #globalnav li#gn-support { border-bottom:none; }
+			#globalheader #globalnav li#gn-ipod a { border-radius:0; }
+		#globalheader #globalsearch,
+		#globalheader.searchmode #globalsearch { position:absolute; width:24%;}
+			#globalheader:after { content:""; display:table; clear:both; }
+	}
+	
+/*	980px
+	-------------------------------------------------------------------------- */
+	@media only screen and (min-width: 61.25em) {
+		#globalheader { width:980px; border:none; background:-webkit-gradient(linear, 0 0, 0 100%, from(rgba(0, 0, 0, .2)), color-stop(0.05, rgba(0, 0, 0, 0)), color-stop(0.97, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .45))), -webkit-gradient(linear, 0 0, 100% 0, from(rgba(0, 0, 0, .2)), color-stop(0.002, rgba(0, 0, 0, 0)), color-stop(0.998, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, .2))), url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA9QAAAAkCAMAAABfcIIyAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAHVQTFRFAAAA%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F5YtmQAAAACd0Uk5TAAECAwQFBgcICQoLDA0ODxAREhMUFRYXGBkaGxwdHh8gISIjJCUmZiD6WAAAAdlJREFUeF7t3btuFEEQheFzunotGYkIERA4spn3fyeHiAgEEtsXB82s2eEJavR%2F0Wjyo75XWfHpw4MkSXNqCkA2lr2%2B%2Fvz63n15qpI0x5yTSAM52XaxJLVXf%2FkoaY6xQk2sgXy8Ql2KJf3wS5HG6HMMQg3kZNkuxVGKNLxJo48%2BxhxTpBrIx7JcXEqUKJI3zd77CjWLaiAle4U6Iixv6q33MfocTL%2BBlCy7OEqJqCFvs%2FV2m3%2BTaiAd6zb7rlHtrbc1VA%2Bm30BSa%2B%2B7RNSo4a21thbVTL%2BBnCy7rCV1rdXbtbXW%2B%2Bh%2Ft78BZLM2v6NE1Fov%2FrpC3Zl%2BA2l5H6lrrRe%2FXNu%2BqCbUQE57qGvsoW5t9D4H028gJculOKLUWuvFz%2B16O9NipAZSsm8nWpfq53ZlTQ3k9s%2BamlADZ0CogZMh1MDJEGrgZAg1cDL%2Fh5ojLSC1%2ByMtLp8A2R0un3BNFEjv%2FpooDzqA9O4fdPD0Esju8PSSIglAdsciCZQzArI7lDOat30yCg8CGe2FB1eovZcI7oMSwUBSq0TwWlQHxfyBEzgW86ftDpDase0ODfKA7A4N8mhlC2R318r2px%2BeQqLpPJDae9P5%2FmrVz491%2FWekBlKy7PXVfn9rb9xXsMD2wdOcAAAAAElFTkSuQmCC') no-repeat 50% 50%, -webkit-gradient(linear, 0 100%, 0 0, from(#666), color-stop(0.5, #5e5e5e), color-stop(0.51, #707070), to(#808080));
+			-webkit-box-shadow:rgba(0,0,0,0.3) 0 1px 2px; }
+		#globalheader #globalnav { display:table; position:relative; width:845px; -webkit-border-radius:0; background:none; }
+		#globalheader #globalnav li { display:table-cell; float:none; width:100%; border:none; }
+		
+		#globalheader #globalnav li#gn-apple,
+		#globalheader #globalnav li#gn-store,
+		#globalheader #globalnav li#gn-mac,
+		#globalheader #globalnav li#gn-ipod,
+		#globalheader #globalnav li#gn-iphone,
+		#globalheader #globalnav li#gn-ipad,
+		#globalheader #globalnav li#gn-itunes,
+		#globalheader #globalnav li#gn-support { border:none; }
+		#globalheader #globalnav li a { box-shadow:none; -webkit-border-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAAEUlEQVQIHWP4r8bA8F%2BKwQEADZUCf37PGokAAAAASUVORK5CYII%3D') 0 2 0 1; background:none;; }
+		#globalheader #globalnav li a span { background:url(/global/nav/images/globalnav_text.svg); }
+		#globalheader #globalsearch { clear:none; position:absolute; width:106px; margin:0; box-sizing:content-box; -webkit-border-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAADUlEQVQIHWP4r8YABgAJCwEmqyi5lgAAAABJRU5ErkJggg%3D%3D') 0 2 0 1; }
+		
+		#home #billboard { width:980px; height:655px; }
+		#home #billboard #hero { padding:155px 0 499px; } 
+		#home #billboard #hero .hero-image { top:32px; }
+		#home #billboard #hero hgroup { float:right; width:390px; margin-right:60px; }
+		#home #billboard #hero hgroup h1 { margin-bottom:85px; }
+		#home #billboard .videos.bordered { width:260px; position:absolute; top:417px; left:592px; }
+		
+		.promos ul { width:980px; }
+			.promos ul li.last-child { margin:0 0 10px; }
+		.promos ul li a .play { width:46px; height:46px; top:66px; left:95px; background-size:46px 92px; }
+		
+		#homefooter { width:980px; font-size:10px; }
+			#homefooter p.left, 
+			#homefooter #links p.left { float:left; text-align:left; text-indent:10px; }
+			#homefooter #links ul.right { float:right; margin:0 10px 0 0; }
+		.piped li { float:left; }
+		.piped a { border:1px solid #797c80; }
+		.sosumi { font-size:10px !important; }
+		#homefooter .sosumi p,
+		#homefooter .sosumi ul.piped { display:inline; }
+			#homefooter .sosumi p { padding:0 0.75em 0 0; }
+			#homefooter .sosumi ul.piped { padding:0 1.2em 0 0; }
+		#worldwide { display:inline; margin:0; text-align:left; }
+	}
+	
