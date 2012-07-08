@@ -25,12 +25,15 @@ Also, one note. This is only working in WebKit browsers right now. If someone wa
 Now, you can visit any of these sites and run the bookmarklet to see the changes.
 * [Switch to Gmail](https://mail.google.com/mail/help/intl/en/switch.html)
 * [Daring Fireball](http://daringfireball.net)
+* [Apple](http://apple.com)
 
 ### Contribute
-In order to contribute, you'll need to fork the repo and make changes to the "gh-pages" branch. I'm not exactly a git-master, so if you know of a better way to configure this (maybe working in master and "releasing" into gh-pages) let me know.
+Everything happens in the "gh-pages" branch so that we can link to these files appropriately. In order to contribute, you'll need to fork the repo and make changes to the "gh-pages" branch. I'm not exactly a git-master, so if you know of a better way to configure this (maybe working in master and "releasing" into gh-pages) let me know.
 
-You'll need a directory that's the same as the "document.location.hostname" with a "css" sub directory. Only one CSS file is loaded (retrofit.css) so you can use Scss or LESS or whatever you want to generate that single CSS file.
+You'll need a directory that's the same as "document.location.hostname" with a "css" sub directory (so for Apple, that's www.apple.com). Only one CSS file is loaded (retrofit.css) so you can use Scss or LESS or whatever you want to generate that single CSS file.
 
-You also might find it easier to work in the "incogneto" mode of your favorite browser. Caching seems to get in the way pretty easily when you're doing this kind of stuff.
+For dev purposes, you might want to change the reference to the CSS file in the bookmarklet to reference your repo's version. Just make sure you revert before you make a pull request.
+
+You also might find it easier to work in the "incognito" mode of your favorite browser. Caching seems to get in the way pretty easily when you're doing this kind of stuff.
 
 I look forward to seeing your creations!
