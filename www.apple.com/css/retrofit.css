@@ -20,11 +20,40 @@
 		#globalheader.searchmode #globalsearch { float:none; clear:both; width:100%; position:relative; margin:10px auto; box-sizing:border-box; -webkit-border-image:none; }
 		#globalheader #sp-searchtext { -webkit-border-radius:50%; border-radius:50%; }
 
-		/* Ben's Original Styles */
 		#main { min-width: inherit; }
-		#billboard { width: 100%; }
-		#billboard #hero hgroup { width: 38.77551; }
-		#billboard #hero .hero-image { max-width: 100%; height: auto; }		
+		
+		/* MacbookPro with Retina display Hero */
+		#home #billboard { width: 95%; height:auto; margin:auto auto; padding:0 0 20px; }
+		#home #billboard #hero { padding:20px 0 280px; } 
+		#home #billboard #hero hgroup { width: 38.77551; }
+		#home #billboard #hero .hero-image { max-width: 100%; height: auto; top:200px; }
+		
+		#home #billboard #hero hgroup { float:none; width:90%; margin:0 auto; }
+			#home #billboard #hero hgroup h1 { margin-bottom:30px; }
+			#home #billboard #hero hgroup img { max-width: 100%; height: auto; }
+		
+			#home #billboard .videos.bordered { width:100%; position:relative; left:auto; top:auto; }
+		
+		.promos { margin:10px 0 0; }
+		.promos ul { width:95%; margin:auto auto; }
+		.promos ul li { width:47.5%; height:auto; position:relative; margin:0 0 0 5%; }
+			.promos ul li:nth-child(3) { margin:10px 0 0; }
+			.promos ul li.last-child { margin:10px 0 0 5%; }
+		.promos ul li .curve-down { display:block; height:auto; }
+		.promos ul li a.promo-rotate { position:static; }
+		.promos ul li img { max-width:100%; height:auto; }
+		.promos ul li a .play { height:30px; width:30px; top:40px; left:42%; background-size:30px 60px; }
+		
+		#homefooter { width:95%; margin:auto auto; font-size:12px; }
+			#homefooter p.left, 
+			#homefooter #links p.left { float:none; text-align:center; text-indent:0; }
+			#homefooter #links ul.right { float:none; margin:10px 0; }
+		.piped li { float:none; }
+		.piped a { border:none; }
+		.sosumi { font-size:12px !important; }
+		#homefooter .sosumi p,
+		#homefooter .sosumi ul.piped { display:block; padding:0; }
+		#worldwide { display:block; margin:10px auto; text-align:center; }
 	}
 	
 /*	540px
@@ -83,4 +112,29 @@
 		#globalheader #globalnav li a { box-shadow:none; -webkit-border-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAAEUlEQVQIHWP4r8bA8F%2BKwQEADZUCf37PGokAAAAASUVORK5CYII%3D') 0 2 0 1; background:none;; }
 		#globalheader #globalnav li a span { background:url(/global/nav/images/globalnav_text.svg); }
 		#globalheader #globalsearch { clear:none; position:absolute; width:106px; margin:0; box-sizing:content-box; -webkit-border-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAABCAQAAABTNcdGAAAADUlEQVQIHWP4r8YABgAJCwEmqyi5lgAAAABJRU5ErkJggg%3D%3D') 0 2 0 1; }
+		
+		#home #billboard { width:980px; height:655px; }
+		#home #billboard #hero { padding:155px 0 499px; } 
+		#home #billboard #hero .hero-image { top:32px; }
+		#home #billboard #hero hgroup { float:right; width:390px; margin-right:60px; }
+		#home #billboard #hero hgroup h1 { margin-bottom:85px; }
+		#home #billboard .videos.bordered { width:260px; position:absolute; top:417px; left:592px; }
+		
+		.promos ul { width:980px; }
+			.promos ul li.last-child { margin:0 0 10px; }
+		.promos ul li a .play { width:46px; height:46px; top:66px; left:95px; background-size:46px 92px; }
+		
+		#homefooter { width:980px; font-size:10px; }
+			#homefooter p.left, 
+			#homefooter #links p.left { float:left; text-align:left; text-indent:10px; }
+			#homefooter #links ul.right { float:right; margin:0 10px 0 0; }
+		.piped li { float:left; }
+		.piped a { border:1px solid #797c80; }
+		.sosumi { font-size:10px !important; }
+		#homefooter .sosumi p,
+		#homefooter .sosumi ul.piped { display:inline; }
+			#homefooter .sosumi p { padding:0 0.75em 0 0; }
+			#homefooter .sosumi ul.piped { padding:0 1.2em 0 0; }
+		#worldwide { display:inline; margin:0; text-align:left; }
 	}
+	
