@@ -10,7 +10,7 @@ There are two components to this project:
 1. a small bookmarklet which inserts an html link and a meta tag into the head of the current page
 2. a bunch of CSS files for any website which are reference by the link added by the bookmarklet
 
-So here's a use case. Someone decides they'd like to experiment with making a website (say John Gruber's http://daringfireball.com) responsive. They check to see if anyone else has already started this process and see that there is NOT a "daringfireball.net" directory in the "gh-pages" branch. They clone the repo, install the bookmarklet, create "daringfireball.net/css/retrofit.css" (in the "gh-pages" branch) with some CSS to make the site respond and submit a pull request. Once this is accepted, anyone with the bookmarklet will be able to see their CSS in action by running the bookmarklet from John's site.
+So here's a use case. Someone decides they'd like to experiment with making a website (say John Gruber's http://daringfireball.com) responsive. They check to see if anyone else has already started this process and see that there is NOT a "daringfireball.net" directory in the "gh-pages" branch. They fork the repo, install the bookmarklet, create "daringfireball.net/css/retrofit.css" (in the "gh-pages" branch) with some CSS to make the site respond and submit a pull request. Once this is accepted, anyone with the bookmarklet will be able to see their CSS in action by running the bookmarklet from John's site.
 
 This simple little bookmarklet gives you a chance to do something about the bad mobile experiences you find.
 
