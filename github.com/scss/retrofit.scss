@@ -1,0 +1,141 @@
+@media (max-width: 1060px) {
+  * {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+
+  html,
+  body {
+    min-width: 100%;
+  }
+
+  #header {
+    padding: 0 10px;
+  }
+  .container {
+    width: 100%;
+  }
+
+  .topsearch {
+    width: 80%;
+    margin-left: 82px;
+    padding-bottom: 5px;
+
+    form {
+      width: 100%;
+    }
+
+    .search {
+      width: 93%;
+
+      input {
+        width: 100%;
+      }
+    }
+  }
+
+  .top-nav {
+    margin: 0;
+  }
+
+  #userbox {
+    float: none;
+    margin-left: 94px;
+  }
+
+  #user-links {
+    padding: 2px 0 6px;
+  }
+
+  .tabs.with-details-box {
+    float: left;
+    width: 100%;
+  }
+  .pagehead {
+
+    > ul.tabs li {
+      display: block;
+      width: 25%;
+      height: 36px;
+      float: left;
+    }
+
+    &.orgpage > ul.tabs li {
+      width: 33%;
+
+      &:nth-child( 4 ),
+      &:nth-child( 5 ) {
+        margin-top: 2px;
+        width: 50%;
+      }
+    }
+  }
+
+  .site {
+    padding: 0;
+  }
+  .account-switcher-container {
+    display: inline;
+    position: relative;
+    top: -8px;
+
+    .minibutton.switcher {
+      margin-top: 15px;
+    }
+  }
+  p.tip {
+    width: 55%;
+
+    strong.protip {
+      margin: 0;
+    }
+  }
+
+  .news {
+    margin: 0 5%;
+    width: 90%;
+  }
+
+  #repo_details {
+    clear: left;
+  }
+
+  #dashboard {
+    float: left;
+    margin-top: 10px;
+
+    .repos {
+      margin: 0 5% 20px;
+      width: 90%;
+    }
+  }
+
+  #footer {
+    #blacktocat {
+      float: none;
+      margin: 15px auto;
+    }
+
+    .upper_footer ul.footer_nav {
+      margin: 0 2% 20px 3%;
+      width: 44%;
+
+      &:nth-child(even) {
+        clear: left;
+        margin-right: 0;
+      }
+    }
+
+    .lower_footer {
+      #legal {
+        width: auto;
+      }
+      .sponsor {
+        width: 100%;
+        float: left;
+        padding-left: 15px;
+      }
+    }
+  }
+}
